@@ -10,57 +10,51 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 
-        <style>
-            @layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
-        </style>
+        <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
 
-        <script src="https://cdn.tailwindcss.com">
-
-        </script>
-        <script id="tailwind-config">
-            tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'error': '#ba1a1a', 'surface-container-highest': '#d3e4fe', 'on-surface': '#0b1c30', 'primary': '#000000', 'primary-fixed': '#dae2fd', 'on-primary-fixed-variant': '#3f465c', 'outline': '#76777d', 'on-error-container': '#93000a', 'inverse-primary': '#bec6e0', 'inverse-on-surface': '#eaf1ff', 'on-secondary-container': '#00714d', 'on-error': '#ffffff', 'tertiary': '#000000', 'surface-dim': '#cbdbf5', 'on-tertiary-fixed-variant': '#264191', 'on-secondary-fixed-variant': '#005236', 'surface-container-low': '#eff4ff', 'on-secondary': '#ffffff', 'primary-fixed-dim': '#bec6e0', 'secondary-container': '#6cf8bb', 'on-surface-variant': '#45464d', 'secondary-fixed-dim': '#4edea3', 'primary-container': '#131b2e', 'tertiary-fixed': '#dce1ff', 'surface-container-high': '#dce9ff', 'on-background': '#0b1c30', 'on-primary-fixed': '#131b2e', 'tertiary-container': '#00164e', 'secondary': '#006c49', 'on-secondary-fixed': '#002113', 'tertiary-fixed-dim': '#b6c4ff', 'on-primary-container': '#7c839b', 'surface-container': '#e5eeff', 'surface-variant': '#d3e4fe', 'on-tertiary-container': '#6780d3', 'surface-container-lowest': '#ffffff', 'surface-tint': '#565e74', 'background': '#f8f9ff', 'surface': '#f8f9ff', 'surface-bright': '#f8f9ff', 'secondary-fixed': '#6ffbbe', 'error-container': '#ffdad6', 'on-tertiary-fixed': '#00164e', 'on-primary': '#ffffff', 'inverse-surface': '#213145', 'on-tertiary': '#ffffff', 'outline-variant': '#c6c6cd' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'space-lg': '1.5rem', 'margin': '1rem', 'margin-tablet': '2rem', 'gutter': '1rem', 'space-xs': '0.25rem', 'space-xl': '2rem', 'space-sm': '0.5rem', 'space-md': '1rem', 'margin-desktop': '2.5rem', 'gutter-desktop': '1.5rem' }, 'fontFamily': { 'headline-xl': ['Outfit'], 'caption': ['Inter'], 'price-md': ['Outfit'], 'body-md': ['Inter'], 'label-md': ['Inter'], 'headline-sm': ['Outfit'], 'headline-md': ['Outfit'], 'display-lg-mobile': ['Outfit'], 'headline-lg': ['Outfit'], 'price-lg': ['Outfit'], 'body-sm': ['Inter'], 'headline-xl-mobile': ['Outfit'], 'display-lg': ['Outfit'], 'label-sm': ['Inter'], 'body-lg': ['Inter'] }, 'fontSize': { 'headline-xl': ['36px', { 'lineHeight': '44px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'caption': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.03em', 'fontWeight': '500' }], 'price-md': ['20px', { 'lineHeight': '24px', 'fontWeight': '700' }], 'body-md': ['16px', { 'lineHeight': '24px', 'fontWeight': '400' }], 'label-md': ['14px', { 'lineHeight': '20px', 'fontWeight': '500' }], 'headline-sm': ['16px', { 'lineHeight': '24px', 'fontWeight': '600' }], 'headline-md': ['20px', { 'lineHeight': '28px', 'fontWeight': '600' }], 'display-lg-mobile': ['32px', { 'lineHeight': '40px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'headline-lg': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'price-lg': ['28px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'body-sm': ['14px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'headline-xl-mobile': ['28px', { 'lineHeight': '36px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'display-lg': ['48px', { 'lineHeight': '56px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'label-sm': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.02em', 'fontWeight': '600' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'fontWeight': '400' }] } } } };
-        </script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'error': '#ba1a1a', 'surface-container-highest': '#d3e4fe', 'on-surface': '#0b1c30', 'primary': '#000000', 'primary-fixed': '#dae2fd', 'on-primary-fixed-variant': '#3f465c', 'outline': '#76777d', 'on-error-container': '#93000a', 'inverse-primary': '#bec6e0', 'inverse-on-surface': '#eaf1ff', 'on-secondary-container': '#00714d', 'on-error': '#ffffff', 'tertiary': '#000000', 'surface-dim': '#cbdbf5', 'on-tertiary-fixed-variant': '#264191', 'on-secondary-fixed-variant': '#005236', 'surface-container-low': '#eff4ff', 'on-secondary': '#ffffff', 'primary-fixed-dim': '#bec6e0', 'secondary-container': '#6cf8bb', 'on-surface-variant': '#45464d', 'secondary-fixed-dim': '#4edea3', 'primary-container': '#131b2e', 'tertiary-fixed': '#dce1ff', 'surface-container-high': '#dce9ff', 'on-background': '#0b1c30', 'on-primary-fixed': '#131b2e', 'tertiary-container': '#00164e', 'secondary': '#006c49', 'on-secondary-fixed': '#002113', 'tertiary-fixed-dim': '#b6c4ff', 'on-primary-container': '#7c839b', 'surface-container': '#e5eeff', 'surface-variant': '#d3e4fe', 'on-tertiary-container': '#6780d3', 'surface-container-lowest': '#ffffff', 'surface-tint': '#565e74', 'background': '#f8f9ff', 'surface': '#f8f9ff', 'surface-bright': '#f8f9ff', 'secondary-fixed': '#6ffbbe', 'error-container': '#ffdad6', 'on-tertiary-fixed': '#00164e', 'on-primary': '#ffffff', 'inverse-surface': '#213145', 'on-tertiary': '#ffffff', 'outline-variant': '#c6c6cd' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'space-lg': '1.5rem', 'margin': '1rem', 'margin-tablet': '2rem', 'gutter': '1rem', 'space-xs': '0.25rem', 'space-xl': '2rem', 'space-sm': '0.5rem', 'space-md': '1rem', 'margin-desktop': '2.5rem', 'gutter-desktop': '1.5rem' }, 'fontFamily': { 'headline-xl': ['Outfit'], 'caption': ['Inter'], 'price-md': ['Outfit'], 'body-md': ['Inter'], 'label-md': ['Inter'], 'headline-sm': ['Outfit'], 'headline-md': ['Outfit'], 'display-lg-mobile': ['Outfit'], 'headline-lg': ['Outfit'], 'price-lg': ['Outfit'], 'body-sm': ['Inter'], 'headline-xl-mobile': ['Outfit'], 'display-lg': ['Outfit'], 'label-sm': ['Inter'], 'body-lg': ['Inter'] }, 'fontSize': { 'headline-xl': ['36px', { 'lineHeight': '44px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'caption': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.03em', 'fontWeight': '500' }], 'price-md': ['20px', { 'lineHeight': '24px', 'fontWeight': '700' }], 'body-md': ['16px', { 'lineHeight': '24px', 'fontWeight': '400' }], 'label-md': ['14px', { 'lineHeight': '20px', 'fontWeight': '500' }], 'headline-sm': ['16px', { 'lineHeight': '24px', 'fontWeight': '600' }], 'headline-md': ['20px', { 'lineHeight': '28px', 'fontWeight': '600' }], 'display-lg-mobile': ['32px', { 'lineHeight': '40px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'headline-lg': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'price-lg': ['28px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'body-sm': ['14px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'headline-xl-mobile': ['28px', { 'lineHeight': '36px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'display-lg': ['48px', { 'lineHeight': '56px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'label-sm': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.02em', 'fontWeight': '600' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'fontWeight': '400' }] } } } };</script>
     </head>
 
     <body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
         <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
             <div class="bg-primary-container text-on-primary text-center py-2 px-margin text-label-sm font-label-sm flex items-center justify-center gap-2">
-            <span class="material-symbols-outlined text-label-md text-secondary-fixed">
-                local_shipping
-            </span>
-            <span>
-                Envío GRATIS a toda Guatemala en compras mayores a Q.350 | Entregas express en 24h a Ciudad de Guatemala
-            </span>
-        </div>
-        <div class="h-20 max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter-desktop">
-            <div class="flex items-center gap-space-md">
-                <img alt="MercadoGo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXakRMm9XimHwF6e65ZkcLN0fc-LZZvwHOORzsUljDCFUZ1wbMB4X-_lhWhTmjj9fSZil6N2qPpZQOQg9ZjGrJid002N6SujVuWi46DfbVTgVf15V9TQnTa3YQwdZzmLBy4lo4YvV14S2D3xPWdKXcXrhboKZabPe9oTvoJm88oxsg_sE6cIJohuzp2K1bWNqJ2lKUkPWDxh4n_rU3sH6hB2wVbq_CbcU4AuyKkHVd9Ucf1H8qEfaB1cxN"/>
-                <span class="font-headline-lg text-headline-lg text-primary hidden sm:inline-block tracking-tight">
-                    MercadoGo
+                <span class="material-symbols-outlined text-label-md text-secondary-fixed">
+                    local_shipping
+                </span>
+                <span>
+                    Envío GRATIS a toda Guatemala en compras mayores a Q.350 | Entregas express en 24h a Ciudad de Guatemala
                 </span>
             </div>
-            <div class="hidden lg:flex items-center">
-                <button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-md py-2 rounded-lg text-on-surface font-label-md text-label-md transition-colors" type="button">
-                    <span class="material-symbols-outlined text-label-md">
-                        category
+            <div class="h-20 max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter-desktop">
+                <div class="flex items-center gap-space-md">
+                    <img alt="MercadoGo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXakRMm9XimHwF6e65ZkcLN0fc-LZZvwHOORzsUljDCFUZ1wbMB4X-_lhWhTmjj9fSZil6N2qPpZQOQg9ZjGrJid002N6SujVuWi46DfbVTgVf15V9TQnTa3YQwdZzmLBy4lo4YvV14S2D3xPWdKXcXrhboKZabPe9oTvoJm88oxsg_sE6cIJohuzp2K1bWNqJ2lKUkPWDxh4n_rU3sH6hB2wVbq_CbcU4AuyKkHVd9Ucf1H8qEfaB1cxN"/>
+                    <span class="font-headline-lg text-headline-lg text-primary hidden sm:inline-block tracking-tight">
+                        MercadoGo
                     </span>
-                    <span>
-                        Todas las Categorías
-                    </span>
-                    <span class="material-symbols-outlined text-label-sm">
-                        expand_more
-                    </span>
-                </button>
-            </div>
-            <div class="flex-1 max-w-2xl mx-space-sm">
-                <div class="relative flex items-center w-full">
-                    <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-4 pr-12 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.05)] transition-all" placeholder="Buscar en más de 20,000 productos: tecnología, hogar, moda..." type="search"/>
-                    <button aria-label="Buscar" class="absolute right-1 bg-secondary text-on-secondary hover:bg-on-secondary-container p-2 rounded-lg flex items-center justify-center transition-colors" type="button">
+                </div>
+                <div class="hidden lg:flex items-center">
+                    <button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-md py-2 rounded-lg text-on-surface font-label-md text-label-md transition-colors" type="button">
                         <span class="material-symbols-outlined text-label-md">
-                            search
+                            category
+                        </span>
+                        <span>
+                            Todas las Categorías
+                        </span>
+                        <span class="material-symbols-outlined text-label-sm">
+                            expand_more
                         </span>
                     </button>
                 </div>
+                <div class="flex-1 max-w-2xl mx-space-sm">
+                    <div class="relative flex items-center w-full">
+                        <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-4 pr-12 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.05)] transition-all" placeholder="Buscar en más de 20,000 productos: tecnología, hogar, moda..." type="search"/>
+                        <button aria-label="Buscar" class="absolute right-1 bg-secondary text-on-secondary hover:bg-on-secondary-container p-2 rounded-lg flex items-center justify-center transition-colors" type="button">
+                            <span class="material-symbols-outlined text-label-md">
+                                search
+                            </span>
+                        </button>
+                    </div>
                 </div>
                 <div class="flex items-center gap-space-md shrink-0">
                     <div class="hidden xl:flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm cursor-pointer hover:text-on-surface transition-colors">
@@ -113,28 +107,28 @@
             <div class="bg-surface-container-low">
                 <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between overflow-x-auto py-2.5 gap-gutter-desktop">
                     <nav class="flex items-center gap-space-md shrink-0" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg">
-                        <a aria-current="page" class="px-2.5 py-1 transition-colors whitespace-nowrap bg-primary-container text-on-primary font-bold rounded-lg" data-path="flash-deals" href="#">
+                        <a aria-current="page" class="px-2.5 py-1 transition-colors whitespace-nowrap bg-primary-container text-on-primary font-bold rounded-lg" data-path="flash-deals" href="catalogo.html">
                             Ofertas Flash
                         </a>
-                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="tech-catalog" href="#">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="tech-catalog" href="catalogo.html">
                             Tecnología
                         </a>
-                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="home-furniture" href="#">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="home-furniture" href="catalogo.html">
                             Hogar &amp; Muebles
                         </a>
-                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="fashion-footwear" href="#">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="fashion-footwear" href="catalogo.html">
                             Moda &amp; Calzado
                         </a>
-                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="health-beauty" href="#">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="health-beauty" href="catalogo.html">
                             Salud &amp; Belleza
                         </a>
-                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="groceries" href="#">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="groceries" href="catalogo.html">
                             Supermercado &amp; Despensa
                         </a>
-                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="sports" href="#">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="sports" href="catalogo.html">
                             Deportes
                         </a>
-                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="outlet-liquidation" href="#">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="outlet-liquidation" href="catalogo.html">
                             Liquidación Outlet
                         </a>
                     </nav>
@@ -143,7 +137,7 @@
                             support_agent
                         </span>
                         <span>
-                            Atención al Cliente: 
+                            Atención al Cliente:
                             <strong class="text-primary">
                                 +502 2345-6789
                             </strong>
@@ -167,866 +161,977 @@
                                 <span class="bg-secondary text-on-secondary font-label-sm text-caption uppercase tracking-wider px-2.5 py-1 rounded-full font-bold flex items-center gap-1 shadow-sm">
                                     <span class="material-symbols-outlined text-caption" style="font-variation-settings: 'FILL' 1;">
                                         bolt
-                                        <span> 
-                                            Gran Venta de Temporada
-                                        </span>
-                                    <span class="bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-caption px-2.5 py-1 rounded-full flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-caption">
-                                            verified_user
-                                        </span>
-                                            Garantía Oficial 12 Meses
-                                        </span>
-                                    </div>
-        <h1 class="font-headline-xl text-headline-xl text-surface-bright leading-tight tracking-tight mt-1">
-            Hasta 
-            <span class="text-secondary-fixed">
-                40% OFF
-            </span> 
-            en Tecnología y Hogar inteligente
-        </h1>
-        <p class="font-body-md text-body-md text-surface-container-highest max-w-md">
-          Renueva tus espacios con la más alta innovación tecnológica. Paga en hasta <strong class="text-surface-bright">12 Visacuotas sin recargo</strong> con bancos del sistema guatemalteco.
-        </p>
-    </div>
-    <div class="relative z-10 flex flex-wrap items-center gap-space-md pt-space-lg">
-        <a class="bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary font-label-md text-label-md font-semibold px-space-lg py-3 rounded-lg shadow-md transition-all flex items-center gap-2" href="#catalogo">
-            <span>Explorar Catálogo</span>
-            <span class="material-symbols-outlined text-label-md">arrow_forward</span>
-        </a>
-        <div class="flex items-center gap-2 text-surface-container-highest font-label-sm text-label-sm">
-            <span class="material-symbols-outlined text-secondary-fixed text-headline-sm">check_circle</span>
-            <span>Despacho prioritario 24h en Depto. Guatemala</span>
-        </div>
-    </div>
-</div>
-
-<!-- Side Promo Bento Cards (Col 4) -->
- <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-gutter-desktop">
-    <!-- Tile 1: Smartphones & Audio -->
-     <div class="flex-1 relative overflow-hidden rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm group min-h-[200px]">
-        <div class="absolute right-0 bottom-0 w-36 h-36 opacity-85 group-hover:scale-110 transition-transform duration-500">
-            <img class="w-full h-full object-contain" data-alt="Premium flagship matte black smartphone resting beside true wireless earbuds in charging case, soft studio lighting on clean white background, minimalist commercial product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFbxjl-iLQnLbI7ilftv_cjNpkgNFs1oPGT8EZxA8wRR5tUrMg83iGx6hFLQUSo4gN6FBxTLBmgiwDykRyXXvqUa2VahIT-yCTqg_4kNpPQq_xTRD46jpzjlE63zs5DoCOCayFCSMeWvo2BwLk-K4Ot0d2HgymZdC0off15SpqeypN6Sm50WbTPaheegKBdnWOc1YU7A1YD-fNDb5Mnbg6mNLP3etLtpEvNSwR-S6HbK0Qs1FLR2471A"/>
-        </div>
-        <div class="relative z-10 max-w-[65%]">
-            <span class="text-secondary font-label-sm text-caption font-bold tracking-wider uppercase">Lanzamientos 2025</span>
-            <h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-1">Smartphones &amp; Audio Pro</h2>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sonido Hi-Res y conectividad 5G lista para Claro y Tigo.</p>
-        </div>
-        <div class="relative z-10 mt-3">
-            <a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-bold hover:gap-2 transition-all" href="#">
-                <span>Ver Dispositivos</span>
-                <span class="material-symbols-outlined text-label-sm">arrow_forward</span>
-            </a>
-        </div>
-    </div>
-    <!-- Tile 2: Cocina & Electrodomésticos -->
-     <div class="flex-1 relative overflow-hidden rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm group min-h-[200px]">
-        <div class="absolute right-0 bottom-0 w-36 h-36 opacity-85 group-hover:scale-110 transition-transform duration-500">
-            <img class="w-full h-full object-contain" data-alt="Modern digital air fryer and matte black espresso coffee machine on marble kitchen countertop, crisp reflections, clean premium home appliance staging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPVhAzuD8QJpI3hNka9ULv6L6lvJDbkEvlN1TNbhqdjkB-YddUfZnJbaZR_d7Z3Vo9zQiNtQ08icRTJcD4B-SJuTp5qnG-dJl7HBKECn0DeskYNempW-Qu8WzsJQ_6Y8rgRGJiWYF1YzDukKaQjCNnsbkOY_l1uC9T6UlAGXEuRnDzH9oVjyQYkwimwg-xxHdLARG5DJIuSJ-djD3nI546ueItaCfX6o4noF8KaU9YCTFCSEsySN5fEg"/>
-        </div>
-        <div class="relative z-10 max-w-[65%]">
-            <span class="text-secondary font-label-sm text-caption font-bold tracking-wider uppercase">Cocina Gourmet</span>
-            <h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-1">Electrodomésticos</h2>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Air fryers, cafeteras italianas y batidoras con -35%.</p>
-        </div>
-        <div class="relative z-10 mt-3">
-            <a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-bold hover:gap-2 transition-all" href="#">
-                <span>Comprar Ahora</span>
-                <span class="material-symbols-outlined text-label-sm">arrow_forward</span>
-            </a>
-        </div>
-    </div>
-</div>
-</section>
-<!-- Value Propositions Bar -->
- <section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
-        <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
-            <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
-                <span class="material-symbols-outlined text-headline-lg">local_shipping</span>
-            </div>
-            <div class="flex flex-col min-w-0">
-                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Envío Rápido a Toda GT</span>
-                <span class="font-body-sm text-caption text-on-surface-variant">Ciudad de Guatemala y 22 departamentos</span>
-            </div>
-        </div>
-        <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
-            <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
-                <span class="material-symbols-outlined text-headline-lg">payments</span>
-            </div>
-            <div class="flex flex-col min-w-0">
-                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Pago Contra Entrega</span>
-                <span class="font-body-sm text-caption text-on-surface-variant">Pagas en efectivo al recibir tu paquete</span>
-            </div>
-        </div>
-    </div>
-    <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
-        <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
-            <span class="material-symbols-outlined text-headline-lg">sync</span>
-        </div>
-        <div class="flex flex-col min-w-0">
-            <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">30 Días de Devolución</span>
-            <span class="font-body-sm text-caption text-on-surface-variant">Cambios sin complicaciones ni preguntas</span>
-        </div>
-    </div>
-</div>
-</div>
-<div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
-    <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
-        <span class="material-symbols-outlined text-headline-lg">support_agent</span>
-    </div>
-    <div class="flex flex-col min-w-0">
-        <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Soporte por WhatsApp</span>
-        <span class="font-body-sm text-caption text-on-surface-variant">Atención inmediata con asesores locales</span>
-    </div>
-</div>
-</div>
-</div>
-</section>
-<!-- Category Exploration Grid -->
- <section class="w-full flex flex-col gap-space-md">
-    <div class="flex items-center justify-between">
-        <div>
-            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Explora por departamento</span>
-            <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Categorías Destacadas</h2>
-        </div>
-        <a class="hidden sm:flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-on-secondary-container font-semibold transition-colors" href="#">
-            <span>
-                Ver todas (18)
-            </span>
-            <span class="material-symbols-outlined text-label-md">
-                arrow_forward
-            </span>
-        </a>
-    </div>
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-gutter">
-        <!-- Category 1 -->
-         <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="#">
-            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <img class="w-full h-full object-cover" data-alt="Sleek aluminum laptop and wireless keyboard isolated against soft neutral background, crisp technology studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD34hQMWTbIvP7pgFSw1wJS05gXjVqPGUsMmPtdCwZiv7tdLuv19GL6sMixkh3d5BjCNlTT4CuN5sqvSyVNB-E64kzZiBbkjMIabDDifQN_bwIjwEjwSdY7wjDRewmt6H4S5POoeG1Jh32GX4YUd20BOOF-RBW4dAn46HMiGmLxc9GScWzZNpVyK7GoFYlr9rXNZoJbFXWPgfBuUU70qyGYbFplnDNGodfngtxmxqZT6L_ItzWOQmsQmg"/>
-            </div>
-            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                Tecnología &amp; PC
-            </span>
-            <span class="font-caption text-caption text-on-surface-variant -mt-1">
-                +3,400 ítems
-            </span>
-        </a>
-        <!-- Category 2 -->
-         <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="#">
-            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <img class="w-full h-full object-cover" data-alt="Comfortable emerald green modern armchair with minimalist wooden floor lamp in scandinavian styled interior, daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKd546CCXEenWAJsEwIT4Sa1Xo47vdzlIOA7H8W5kyKRKs8opFmqb476Meh_LYSQE9HAKW9N0vZGBGvcCC-pRr7t52AcimNtbrAO47t21vIQL2pfjnIhML1Ms5dTt658Ih2F19gMVl2uAaiS0RkQAoWn54vISE_lpvUs29uo3MHlVxG-l_rSYXx5kFPRJFVluxAZPFFGayyUmDdlMLNtwnLa2Z3aGzd6cf-iQRxFwoB2PAhqGVeX1EgQ"/>
-            </div>
-            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                Hogar &amp; Sala
-            </span>
-            <span class="font-caption text-caption text-on-surface-variant -mt-1">
-                +1,850 ítems
-            </span>
-        </a>
-        <!-- Category 3 -->
-         <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="#">
-            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <img class="w-full h-full object-cover" data-alt="Urban stylish casual denim jacket paired with premium white leather sneakers against light background, editorial fashion shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjDJNvrM8zMJLAkmUTxZaEcGyCjA3x2yXAEoY3rySnwdXgJKJfM2viToBWewH_TVIEkCZv4fsTuX04o8l2oA818lF7OhVtlndFkTAiMDxj9HBFlTppagHIq28g72_muodMTohbsd_5FbUeZ1wXrQJUrAUlA2slGlfQ88i14tlMU9-m1b96sr8ZMgREi4iBn8tqGNkvFWYxbgdafiGkU-lcJUYssgh_wbDekCTqub5CFlCuhTziCKqbbw"/>
-            </div>
-            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                Moda &amp; Calzado
-            </span>
-            <span class="font-caption text-caption text-on-surface-variant -mt-1">
-                +5,200 ítems
-            </span>
-        </a>
-        <!-- Category 4 -->
-         <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="#">
-            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <img class="w-full h-full object-cover" data-alt="Cosmetics skincare serums and organic essential oil bottles arranged on stone slab with clean daylight studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB17lc1UklmRNq9yLFmjG5hZ5euJ8J-R3aLmG8T9THXV5oYvq8XbbxeY7VT4K469_A9WkpNdG2H20lZnhJ2Qzi_A80RtmhqxZNV5HqbaPAoIsDdblZ5Lz_wxLGM_YTEPW_VNPrWA839Zxm91G3xizYBLN3nnM3zK5rAY0L7xVGlzFnC3muVAKz_V18Lkq3veWGOmeLbkJiKb3JPzoQsnMiTbYSITHTuZetpJ6O5eF9BYcZ6lZQdoC4dfw"/>
-            </div>
-            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                Belleza &amp; Salud
-            </span>
-            <span class="font-caption text-caption text-on-surface-variant -mt-1">
-                +2,120 ítems
-            </span>
-        </a>
-        <!-- Category 5 -->
-         <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="#">
-            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <img class="w-full h-full object-cover" data-alt="Yellow heavy duty cordless power drill with steel bits on rustic concrete workbench surface, precision equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS9YfeSlYZJiU467_WiKhdKvMmMPeMOaXt-FvQQCVBVq-51EKE-MngVj_XwN0zOYIrxlr8lEsn8HdXlP77HXGJoCMcb4C_RrtfjTaz7hPpEMazhevoM0dRumVRJJM-HUY2VYGsY-AW_VLsaCmDHKe40-tBktC-TA5V0cHju2RRjrpPKQHOBZuyKUnlR7raaUHz3mlF7ZDoQtFJYtk8Z4egmKs2IzgTSm1fp6Yp4J9KnAB275SY68XkWA"/>
-            </div>
-            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                Herramientas
-            </span>
-            <span class="font-caption text-caption text-on-surface-variant -mt-1">
-                +980 ítems
-            </span>
-        </a>
-        <!-- Category 6 -->
-         <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="#">
-            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                <img class="w-full h-full object-cover" data-alt="Educational wooden building blocks and cute plush animal toy on light pastel surface, bright playful kids room lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePrZybl0K4Wz0gMXXKSHpswrpo-rVW276ec83pky0w0K6zzSJmSzndd8caaQ8Wby1Zh17QHvSp8uCtWpt3P5WUXbaR_T06vlAT61mbnOhu7FbyHvGWTVWgeTvq1lA2ZFYTQ3WXqjvK_3ShBp2DDZlyY22DH-ZuS1qyLS1vSSz0XW7GB_PCc1Wx-LMWJ5h8e3SzydSNN3TSYi8QdKKjLLIQ5iAjGCPapBfNks1fhuOUuccQH-C-9fBWA"/>
-            </div>
-            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
-                Juguetes &amp; Bebés
-            </span>
-            <span class="font-caption text-caption text-on-surface-variant -mt-1">
-                +1,400 ítems
-            </span>
-        </a>
-    </div>
-</section>
-<!-- Flash Deals Banner with Countdown -->
- <section class="w-full bg-gradient-to-r from-primary-container via-inverse-surface to-primary-container rounded-xl p-space-md md:p-space-lg text-on-primary shadow-md overflow-hidden relative">
-    <div class="flex flex-col lg:flex-row items-center justify-between gap-space-md relative z-10">
-        <div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left">
-            <div class="w-14 h-14 rounded-xl bg-error text-on-error flex items-center justify-center shadow-lg animate-pulse shrink-0">
-                <span class="material-symbols-outlined text-headline-xl">
-                    local_fire_department
-                </span>
-            </div>
-            <div>
-                <div class="flex items-center justify-center sm:justify-start gap-2">
-                    <span class="bg-error/20 text-error-container font-label-sm text-caption px-2 py-0.5 rounded font-bold uppercase">
-                        Ofertas Relámpago
-                    </span>
-                    <span class="text-caption font-caption text-surface-container-highest">
-                        Termina en pocas horas
-                    </span>
-                </div>
-                <h3 class="font-headline-lg text-headline-lg text-surface-bright font-bold mt-1">
-                    Precios de Liquidación Directa
-                </h3>
-            </div>
-        </div>
-        <!-- Live Clock Display -->
-         <div class="flex items-center gap-2 bg-surface-container-lowest/10 backdrop-blur-md px-4 py-2 rounded-xl">
-            <div class="flex flex-col items-center min-w-[50px]">
-                <span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-tight" id="flash-hours">
-                    04
-                </span>
-                <span class="font-caption text-caption text-surface-container-highest uppercase">
-                    Horas
-                </span>
-            </div>
-            <span class="font-headline-lg text-secondary-fixed pb-3 font-bold">
-                :
-            </span>
-            <div class="flex flex-col items-center min-w-[50px]">
-                <span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-tight" id="flash-minutes">
-                    27
-                </span>
-                <span class="font-caption text-caption text-surface-container-highest uppercase">
-                    Min
-                </span>
-            </div>
-            <span class="font-headline-lg text-secondary-fixed pb-3 font-bold">
-                :
-            </span>
-            <div class="flex flex-col items-center min-w-[50px]">
-                <span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-tight" id="flash-seconds">
-                    49
-                </span>
-                <span class="font-caption text-caption text-surface-container-highest uppercase">
-                    Seg
-                </span>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Featured Products Catalog Section -->
- <section class="w-full flex flex-col gap-space-md" id="catalogo">
-    <!-- Header & Interactive Category Tabs -->
-     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
-        <div>
-            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
-                Selección Especial
-            </span>
-            <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
-                Catálogo Recomendado
-            </h2>
-        </div>
-        <!-- Tabs Switcher -->
-         <div class="flex items-center gap-1 bg-surface-container p-1 rounded-lg">
-            <button class="tab-btn active-tab px-3 py-1.5 rounded-md font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all" data-tab="best" type="button">
-                Más Vendidos
-            </button>
-            <button class="tab-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" data-tab="new" type="button">
-                Nuevos Ingresos
-            </button>
-            <button class="tab-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" data-tab="deals" type="button">
-                Ofertas Imperdibles
-            </button>
-        </div>
-    </div>
-    <!-- Product Grid (4 items desktop, 2 mobile) -->
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
-        <!-- Product Card 1 -->
-         <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
-            <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
-                <span class="bg-error text-on-error font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
-                    -25% OFF
-                </span>
-                <span class="bg-secondary text-on-secondary font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
-                    Envío Gratis
-                </span>
-            </div>
-            <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
-                <span class="material-symbols-outlined text-headline-sm">
-                    favorite
-                </span>
-            </button>
-            <!-- Product Image -->
-             <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
-                <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Ultra-slim high resolution smart television 55 inch display with ultra thin bezels showing vibrant mountain landscape colors, studio presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRVep_-LP7QLdPtoJI_5sou5puv_7wgtKkzNKp_QGqKt-mP-ND6C9Nxp5cnoeHvcF-VDp2kpmuH7v4a3ajUHbcbXV6jc9Zu23O9oQYsS4kHgLFHLdB-VgWnmv6S9NiRaMQoNpkzkUBI9Hmd977CcWMICDZRabjFCYU2upLi5YxyXr2gT5IlUlOkmc0ogl6QBiBeQn7Un3nMeWrVKFTeV0GQbS8-J3nhxYKzPyD83DjZeTM0gBbPr4pgw"/>
-            </div>
-            <div class="flex flex-col gap-2 mt-4 flex-1">
-                <div class="flex items-center gap-1 text-secondary-fixed-dim">
-                    <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="font-label-sm text-label-sm font-bold text-on-surface">
-                        4.9
-                    </span>
-                    <span class="font-caption text-caption text-on-surface-variant">
-                        (142 reseñas)
-                    </span>
-                </div>
-                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
-                    Smart TV 55" Crystal 4K UHD con Procesador Crystal y Tizen OS
-                </h3>
-                <div class="mt-auto pt-2 flex flex-col">
-                    <div class="flex items-baseline gap-2">
-                        <span class="font-price-md text-price-md text-on-surface font-bold">
-                            Q. 2,999.00
-                        </span>
-                        <span class="font-body-sm text-body-sm text-outline line-through">
-                            Q. 3,999.00
-                        </span>
-                    </div>
-                    <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
-                        12 Visacuotas de Q. 249.92
-                    </span>
-                    <!-- Stock meter -->
-                     <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
-                        <div class="bg-secondary h-full rounded-full w-4/5">
-
+                                    </span>
+                                    Gran Venta de Temporada
+                                </span>
+                                <span class="bg-surface-container-lowest/15 backdrop-blur-md text-surface-bright font-label-sm text-caption px-2.5 py-1 rounded-full flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-caption">
+                                        verified_user
+                                    </span>
+                                    Garantía Oficial 12 Meses
+                                </span>
+                            </div>
+                            <h1 class="font-headline-xl text-headline-xl text-surface-bright leading-tight tracking-tight mt-1">
+                                Hasta
+                                <span class="text-secondary-fixed">
+                                    40% OFF
+                                </span>
+                                en Tecnología y Hogar inteligente
+                            </h1>
+                            <p class="font-body-md text-body-md text-surface-container-highest max-w-md">
+                                Renueva tus espacios con la más alta innovación tecnológica. Paga en hasta
+                                <strong class="text-surface-bright">
+                                    12 Visacuotas sin recargo
+                                </strong>
+                                con bancos del sistema guatemalteco.
+                            </p>
+                        </div>
+                        <div class="relative z-10 flex flex-wrap items-center gap-space-md pt-space-lg">
+                            <a class="bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary font-label-md text-label-md font-semibold px-space-lg py-3 rounded-lg shadow-md transition-all flex items-center gap-2" href="#catalogo">
+                                <span>
+                                    Explorar Catálogo
+                                </span>
+                                <span class="material-symbols-outlined text-label-md">
+                                    arrow_forward
+                                </span>
+                            </a>
+                            <div class="flex items-center gap-2 text-surface-container-highest font-label-sm text-label-sm">
+                                <span class="material-symbols-outlined text-secondary-fixed text-headline-sm">
+                                    check_circle
+                                </span>
+                                <span>
+                                    Despacho prioritario 24h en Depto. Guatemala
+                                </span>
+                            </div>
                         </div>
                     </div>
-                    <span class="font-caption text-caption text-on-surface-variant mt-1">
-                        Solo quedan 6 unidades
-                    </span>
-                </div>
-            </div>
-            <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
-                <span class="material-symbols-outlined text-label-md">
-                    add_shopping_cart
-                </span>
-                <span>
-                    Agregar al Carrito
-                </span>
-            </button>
-        </div>
-        <!-- Product Card 2 -->
-         <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
-            <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
-                <span class="bg-error text-on-error font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
-                    -30% OFF
-                </span>
-            </div>
-            <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
-                <span class="material-symbols-outlined text-headline-sm">
-                    favorite
-                </span>
-            </button>
-            <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
-                <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Space gray modern lightweight laptop with edge-to-edge keyboard and glossy glass trackpad, open lid perspective on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7TtPURwEgFtUJBQoSQpIEWvEi99J9INN_t9zIGRb2RLYgwE0myyRqUXltQkakAjPS6XYS8S2n0NHRiEpfUJoj32v_tYUU0DurKR2uAWQNv70fEn8XhMCpdzvdB_-INRmMEBjJ2KsfWToec9MPZbGJvxvS434RskqPQkzwbbBqu8TRxlNfQ2EwIfJCkj0mP-kHBRVfjm6jcDm5q1zawqaFUGyjk1cpQMfRy9i1zIkRpDmGQrv3iQ1j3Q"/>
-            </div>
-            <div class="flex flex-col gap-2 mt-4 flex-1">
-                <div class="flex items-center gap-1">
-                    <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="font-label-sm text-label-sm font-bold text-on-surface">4.8</span>
-                    <span class="font-caption text-caption text-on-surface-variant">(88 reseñas)</span>
-                </div>
-            </div>
-            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
-                Laptop Ultraliviana 15.6" Intel Core i5, 16GB RAM, 512GB SSD NVMe
-            </h3>
-            <div class="mt-auto pt-2 flex flex-col">
-                <div class="flex items-baseline gap-2">
-                    <span class="font-price-md text-price-md text-on-surface font-bold">
-                        Q. 4,499.00
-                    </span>
-                    <span class="font-body-sm text-body-sm text-outline line-through">
-                        Q. 6,429.00
-                    </span>
-                </div>
-                <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
-                    18 Visacuotas de Q. 249.94
-                </span>
-                <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
-                    <div class="bg-secondary h-full rounded-full w-2/3">
 
+                    <!-- Side Promo Bento Cards (Col 4) -->
+                    <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-gutter-desktop">
+                        <!-- Tile 1: Smartphones & Audio -->
+                        <div class="flex-1 relative overflow-hidden rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm group min-h-[200px]">
+                            <div class="absolute right-0 bottom-0 w-36 h-36 opacity-85 group-hover:scale-110 transition-transform duration-500">
+                                <img class="w-full h-full object-contain" data-alt="Premium flagship matte black smartphone resting beside true wireless earbuds in charging case, soft studio lighting on clean white background, minimalist commercial product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFbxjl-iLQnLbI7ilftv_cjNpkgNFs1oPGT8EZxA8wRR5tUrMg83iGx6hFLQUSo4gN6FBxTLBmgiwDykRyXXvqUa2VahIT-yCTqg_4kNpPQq_xTRD46jpzjlE63zs5DoCOCayFCSMeWvo2BwLk-K4Ot0d2HgymZdC0off15SpqeypN6Sm50WbTPaheegKBdnWOc1YU7A1YD-fNDb5Mnbg6mNLP3etLtpEvNSwR-S6HbK0Qs1FLR2471A"/>
+                            </div>
+                            <div class="relative z-10 max-w-[65%]">
+                                <span class="text-secondary font-label-sm text-caption font-bold tracking-wider uppercase">
+                                    Lanzamientos 2025
+                                </span>
+                                <h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-1">
+                                    Smartphones &amp; Audio Pro
+                                </h2>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                                    Sonido Hi-Res y conectividad 5G lista para Claro y Tigo.
+                                </p>
+                            </div>
+                            <div class="relative z-10 mt-3">
+                                <a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-bold hover:gap-2 transition-all" href="catalogo.html">
+                                    <span>
+                                        Ver Dispositivos
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-sm">
+                                        arrow_forward
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Tile 2: Cocina & Electrodomésticos -->
+                        <div class="flex-1 relative overflow-hidden rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-sm group min-h-[200px]">
+                            <div class="absolute right-0 bottom-0 w-36 h-36 opacity-85 group-hover:scale-110 transition-transform duration-500">
+                                <img class="w-full h-full object-contain" data-alt="Modern digital air fryer and matte black espresso coffee machine on marble kitchen countertop, crisp reflections, clean premium home appliance staging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPVhAzuD8QJpI3hNka9ULv6L6lvJDbkEvlN1TNbhqdjkB-YddUfZnJbaZR_d7Z3Vo9zQiNtQ08icRTJcD4B-SJuTp5qnG-dJl7HBKECn0DeskYNempW-Qu8WzsJQ_6Y8rgRGJiWYF1YzDukKaQjCNnsbkOY_l1uC9T6UlAGXEuRnDzH9oVjyQYkwimwg-xxHdLARG5DJIuSJ-djD3nI546ueItaCfX6o4noF8KaU9YCTFCSEsySN5fEg"/>
+                            </div>
+                            <div class="relative z-10 max-w-[65%]">
+                                <span class="text-secondary font-label-sm text-caption font-bold tracking-wider uppercase">
+                                    Cocina Gourmet
+                                </span>
+                                <h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-1">
+                                    Electrodomésticos
+                                </h2>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                                    Air fryers, cafeteras italianas y batidoras con -35%.
+                                </p>
+                            </div>
+                            <div class="relative z-10 mt-3">
+                                <a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-bold hover:gap-2 transition-all" href="catalogo.html">
+                                    <span>
+                                        Comprar Ahora
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-sm">
+                                        arrow_forward
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <span class="font-caption text-caption text-on-surface-variant mt-1">
-                    11 unidades disponibles
-                </span>
-            </div>
-        </div>
-        <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
-            <span class="material-symbols-outlined text-label-md">
-                add_shopping_cart
-            </span>
-            <span>
-                Agregar al Carrito
-            </span>
-        </button>
-    </div>
-    <!-- Product Card 3 -->
-     <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
-        <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
-            <span class="bg-error text-on-error font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
-                -20% OFF
-            </span>
-        </div>
-        <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
-            <span class="material-symbols-outlined text-headline-sm">
-                favorite
-            </span>
-        </button>
-        <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
-            <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Stainless steel high capacity digital multi-function air fryer with touch panel screen and crisper basket, studio culinary product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp1N3AkcSc4Jn4vfZXinLgMiTYctr_w-cqZKNVsuhHebqyyy09hCJpppR9QFZTQc3b4K1rqKb6tWBr6w1tYaSx9ESZ4bhacMc2AzrWrILv7zgaWaD5uKSOy3SA6Pj1q8zAxBpL6AplAKsKeuSWNxJ0gjov1ltRJsIfhdr76T5tUVrFI7FcKSMswWQ8LK-Dgmnz0FdQ8XTydU0k9OXedlGNfYG1LXmU78wsRmOdsob17IvEm7yHLfjN8w"/>
-        </div>
-        <div class="flex flex-col gap-2 mt-4 flex-1">
-            <div class="flex items-center gap-1">
-                <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
-                    star
-                </span>
-                <span class="font-label-sm text-label-sm font-bold text-on-surface">
-                    5.0
-                </span>
-                <span class="font-caption text-caption text-on-surface-variant">
-                    (310 reseñas)
-                </span>
-            </div>
-            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
-                Freidora de Aire Digital XL 6.5 Litros con 12 Funciones Preprogramadas
-            </h3>
-            <div class="mt-auto pt-2 flex flex-col">
-                <div class="flex items-baseline gap-2">
-                    <span class="font-price-md text-price-md text-on-surface font-bold">
-                        Q. 699.00
-                    </span>
-                    <span class="font-body-sm text-body-sm text-outline line-through">
-                        Q. 875.00
-                    </span>
-                </div>
-                <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
-                    6 Visacuotas de Q. 116.50
-                </span>
-            </div>
-            <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
-                <div class="bg-secondary h-full rounded-full w-9/12"></div>
-            </div>
-            <span class="font-caption text-caption text-on-surface-variant mt-1">
-                Alta demanda en Ciudad de Guatemala
-            </span>
-        </div>
-    </div>
-    <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
-        <span class="material-symbols-outlined text-label-md">
-            add_shopping_cart
-        </span>
-        <span>
-            Agregar al Carrito
-        </span>
-    </button>
-</div>
-<!-- Product Card 4 -->
- <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
-    <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
-        <span class="bg-secondary text-on-secondary font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">Bestseller</span>
-    </div>
-    <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
-        <span class="material-symbols-outlined text-headline-sm">
-            favorite
-        </span>
-    </button>
-    <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
-        <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Over-ear wireless noise cancelling headphones in matte silver finish, premium memory foam cushions, minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vp1RNXlbSmm6hPlAXm3cF7bBF3NrPHVXOUa4CwyFljPaLuqx3WD0FJjiU9RGpsUB2Y0coaeFLWtwaBnyQ6l0Zh3fbOwI2NGIBIitukQ-71eiCabrTpoltxNlrNIuFmbFVn0_M7MbRRx64BzVqvi_FaXUhjllTtxsFnSR7Iqc2BsfnlKH0Ww-KNwiZb7O1QMwBnbocb41xD3ILz_oicuCt0h4gdS7s5vQk8niiUM242UFsRlJeioJAw"/>
-    </div>
-    <div class="flex flex-col gap-2 mt-4 flex-1">
-        <div class="flex items-center gap-1">
-            <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
-                star
-            </span>
-            <span class="font-label-sm text-label-sm font-bold text-on-surface">4.7</span>
-            <span class="font-caption text-caption text-on-surface-variant">(95 reseñas)</span>
-        </div>
-        <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
-            Audífonos Inalámbricos con Cancelación Activa de Ruido y Micrófono HD
-        </h3>
-        <div class="mt-auto pt-2 flex flex-col">
-            <div class="flex items-baseline gap-2">
-                <span class="font-price-md text-price-md text-on-surface font-bold">
-                    Q. 450.00
-                </span>
-                <span class="font-body-sm text-body-sm text-outline line-through">
-                    Q. 580.00
-                </span>
-            </div>
-            <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
-                3 Visacuotas de Q. 150.00
-            </span>
-            <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
-                <div class="bg-secondary h-full rounded-full w-1/2"></div>
-            </div>
-            <span class="font-caption text-caption text-on-surface-variant mt-1">
-                24 unidades disponibles
-            </span>
-        </div>
-    </div>
-    <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
-        <span class="material-symbols-outlined text-label-md">
-            add_shopping_cart
-        </span>
-        <span>
-            Agregar al Carrito
-        </span>
-    </button>
-</div>
-</div>
-</section>
-<!-- Department / Delivery Zone Banner -->
- <section class="w-full bg-surface-container-low rounded-xl p-space-md md:p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
-    <div class="flex items-center gap-space-md">
-        <div class="w-14 h-14 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
-            <span class="material-symbols-outlined text-headline-lg">
-                pin_drop
-            </span>
-        </div>
-        <div>
-            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">
-                ¿En qué departamento te encuentras?
-            </h3>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">
-                Calcula tarifas de flete exactas y tiempo de entrega garantizado con Guatex o Cargo Expreso.
-            </p>
-        </div>
-    </div>
-    <div class="flex flex-col sm:flex-row items-center gap-2 w-full lg:w-auto">
-        <select class="w-full sm:w-64 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2.5 rounded-lg focus:outline-none shadow-sm cursor-pointer">
-            <option>
-                Guatemala (Capital &amp; Municipios)
-            </option>
-            <option>
-                Quetzaltenango
-            </option>
-            <option>
-                Sacatepéquez (Antigua)
-            </option>
-            <option>
-                Escuintla
-            </option>
-            <option>
-                Alta Verapaz (Cobán)
-            </option>
-            <option>
-                Chimaltenango
-            </option>
-            <option>
-                Petén
-            </option>
-        </select>
-        <button class="w-full sm:w-auto bg-primary-container hover:bg-inverse-surface text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-lg font-semibold transition-colors whitespace-nowrap" type="button">
-            Actualizar Zona
-        </button>
-    </div>
-</section>
-<!-- Customer Trust & Verified Reviews in Guatemala -->
-<section class="w-full flex flex-col gap-space-md">
-    <div class="text-center max-w-xl mx-auto">
-        <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
-            Confianza Garantizada
-        </span>
-        <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
-            Clientes Satisfechos en Toda Guatemala
-        </h2>
-        <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-            Más de 45,000 entregas completadas de forma segura y puntual este año.
-        </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
-        <!-- Review 1 -->
-        <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
-            <div class="flex flex-col gap-2">
-                <div class="flex items-center gap-1 text-secondary">
-                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                        star
-                    </span>
-                </div>
-                <p class="font-body-sm text-body-sm text-on-surface italic">
-                    "Pedí un Smart TV un martes por la tarde y para el miércoles al mediodía ya lo tenía instalado en mi casa en Mixco. Pagué contra entrega sin problema."
-                </p>
-            </div>
-            <div class="flex items-center gap-3 pt-2">
-                <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container font-bold flex items-center justify-center font-headline-sm">
-                    CR
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-headline-sm text-label-md text-on-surface font-bold">
-                        Carlos Rodas
-                    </span>
-                    <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
-                        <span class="material-symbols-outlined text-caption text-secondary">
-                            verified
-                        </span>
-                         Mixco, Guatemala 
-                        </span>
+                </section>
+                <!-- Value Propositions Bar -->
+                <section class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+                        <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+                            <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
+                                <span class="material-symbols-outlined text-headline-lg">
+                                    local_shipping
+                                </span>
+                            </div>
+                            <div class="flex flex-col min-w-0">
+                                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+                                    Envío Rápido a Toda GT
+                                </span>
+                                <span class="font-body-sm text-caption text-on-surface-variant">
+                                    Ciudad de Guatemala y 22 departamentos
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+                            <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
+                                <span class="material-symbols-outlined text-headline-lg">
+                                    payments
+                                </span>
+                            </div>
+                            <div class="flex flex-col min-w-0">
+                                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+                                    Pago Contra Entrega
+                                </span>
+                                <span class="font-body-sm text-caption text-on-surface-variant">
+                                    Pagas en efectivo al recibir tu paquete
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+                            <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
+                                <span class="material-symbols-outlined text-headline-lg">
+                                    sync
+                                </span>
+                            </div>
+                            <div class="flex flex-col min-w-0">
+                                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+                                    30 Días de Devolución
+                                </span>
+                                <span class="font-body-sm text-caption text-on-surface-variant">
+                                    Cambios sin complicaciones ni preguntas
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+                            <div class="w-12 h-12 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0 text-on-secondary-container">
+                                <span class="material-symbols-outlined text-headline-lg">
+                                    support_agent
+                                </span>
+                            </div>
+                            <div class="flex flex-col min-w-0">
+                                <span class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+                                    Soporte por WhatsApp
+                                </span>
+                                <span class="font-body-sm text-caption text-on-surface-variant">
+                                    Atención inmediata con asesores locales
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- Review 2 -->
-             <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center gap-1 text-secondary">
-                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span>
-                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span>
-                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span>
-                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span>
-                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span>
-                    </div>
-                    <p class="font-body-sm text-body-sm text-on-surface italic">
-                        "Excelente servicio hacia Quetzaltenango. Aproveché las 12 Visacuotas para la laptop de la universidad de mi hija. Llegó todo sellado de fábrica."
-                    </p>
-                </div>
-                <div class="flex items-center gap-3 pt-2">
-                    <div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-primary-fixed-variant font-bold flex items-center justify-center font-headline-sm">
-                        MA
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-headline-sm text-label-md text-on-surface font-bold">
-                            Marta de León
-                        </span>
-                        <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
-                            <span class="material-symbols-outlined text-caption text-secondary">
-                                verified
+                </section>
+                <!-- Category Exploration Grid -->
+                <section class="w-full flex flex-col gap-space-md">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+                                Explora por departamento
                             </span>
-                             Quetzaltenango
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <!-- Review 3 -->
-            <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
-                <div class="flex flex-col gap-2">
-                    <div class="flex items-center gap-1 text-secondary">
-                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span><span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span><span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span><span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star
-                        </span><span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
-                            star half
-                        </span>
-                    </div>
-                    <p class="font-body-sm text-body-sm text-on-surface italic">
-                        "El soporte de WhatsApp resolvió mis dudas de medidas para un juego de sala en cuestión de 3 minutos. MercadoGo es mi tienda en línea de cabecera."
-                    </p>
-                </div>
-                <div class="flex items-center gap-3 pt-2">
-                    <div class="w-10 h-10 rounded-full bg-surface-container text-on-surface font-bold flex items-center justify-center font-headline-sm">
-                        EA
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-headline-sm text-label-md text-on-surface font-bold">
-                            Eduardo Aguilar
-                        </span>
-                        <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
-                            <span class="material-symbols-outlined text-caption text-secondary">
-                                verified
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                                Categorías Destacadas
+                            </h2>
+                        </div>
+                        <a class="hidden sm:flex items-center gap-1 font-label-md text-label-md text-secondary hover:text-on-secondary-container font-semibold transition-colors" href="catalogo.html">
+                            <span>
+                                Ver todas (18)
                             </span>
-                            Carretera a El Salvador
+                            <span class="material-symbols-outlined text-label-md">
+                                arrow_forward
+                            </span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-gutter">
+                        <!-- Category 1 -->
+                        <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="catalogo.html">
+                            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                                <img class="w-full h-full object-cover" data-alt="Sleek aluminum laptop and wireless keyboard isolated against soft neutral background, crisp technology studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD34hQMWTbIvP7pgFSw1wJS05gXjVqPGUsMmPtdCwZiv7tdLuv19GL6sMixkh3d5BjCNlTT4CuN5sqvSyVNB-E64kzZiBbkjMIabDDifQN_bwIjwEjwSdY7wjDRewmt6H4S5POoeG1Jh32GX4YUd20BOOF-RBW4dAn46HMiGmLxc9GScWzZNpVyK7GoFYlr9rXNZoJbFXWPgfBuUU70qyGYbFplnDNGodfngtxmxqZT6L_ItzWOQmsQmg"/>
+                            </div>
+                            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                                Tecnología &amp; PC
+                            </span>
+                            <span class="font-caption text-caption text-on-surface-variant -mt-1">
+                                +3,400 ítems
+                            </span>
+                        </a>
+                        <!-- Category 2 -->
+                        <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="catalogo.html">
+                            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                                <img class="w-full h-full object-cover" data-alt="Comfortable emerald green modern armchair with minimalist wooden floor lamp in scandinavian styled interior, daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKd546CCXEenWAJsEwIT4Sa1Xo47vdzlIOA7H8W5kyKRKs8opFmqb476Meh_LYSQE9HAKW9N0vZGBGvcCC-pRr7t52AcimNtbrAO47t21vIQL2pfjnIhML1Ms5dTt658Ih2F19gMVl2uAaiS0RkQAoWn54vISE_lpvUs29uo3MHlVxG-l_rSYXx5kFPRJFVluxAZPFFGayyUmDdlMLNtwnLa2Z3aGzd6cf-iQRxFwoB2PAhqGVeX1EgQ"/>
+                            </div>
+                            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                                Hogar &amp; Sala
+                            </span>
+                            <span class="font-caption text-caption text-on-surface-variant -mt-1">
+                                +1,850 ítems
+                            </span>
+                        </a>
+                        <!-- Category 3 -->
+                        <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="catalogo.html">
+                            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                                <img class="w-full h-full object-cover" data-alt="Urban stylish casual denim jacket paired with premium white leather sneakers against light background, editorial fashion shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjDJNvrM8zMJLAkmUTxZaEcGyCjA3x2yXAEoY3rySnwdXgJKJfM2viToBWewH_TVIEkCZv4fsTuX04o8l2oA818lF7OhVtlndFkTAiMDxj9HBFlTppagHIq28g72_muodMTohbsd_5FbUeZ1wXrQJUrAUlA2slGlfQ88i14tlMU9-m1b96sr8ZMgREi4iBn8tqGNkvFWYxbgdafiGkU-lcJUYssgh_wbDekCTqub5CFlCuhTziCKqbbw"/>
+                            </div>
+                            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                                Moda &amp; Calzado
+                            </span>
+                            <span class="font-caption text-caption text-on-surface-variant -mt-1">
+                                +5,200 ítems
+                            </span>
+                        </a>
+                        <!-- Category 4 -->
+                        <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="catalogo.html">
+                            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                                <img class="w-full h-full object-cover" data-alt="Cosmetics skincare serums and organic essential oil bottles arranged on stone slab with clean daylight studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB17lc1UklmRNq9yLFmjG5hZ5euJ8J-R3aLmG8T9THXV5oYvq8XbbxeY7VT4K469_A9WkpNdG2H20lZnhJ2Qzi_A80RtmhqxZNV5HqbaPAoIsDdblZ5Lz_wxLGM_YTEPW_VNPrWA839Zxm91G3xizYBLN3nnM3zK5rAY0L7xVGlzFnC3muVAKz_V18Lkq3veWGOmeLbkJiKb3JPzoQsnMiTbYSITHTuZetpJ6O5eF9BYcZ6lZQdoC4dfw"/>
+                            </div>
+                            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                                Belleza &amp; Salud
+                            </span>
+                            <span class="font-caption text-caption text-on-surface-variant -mt-1">
+                                +2,120 ítems
+                            </span>
+                        </a>
+                        <!-- Category 5 -->
+                        <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="catalogo.html">
+                            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                                <img class="w-full h-full object-cover" data-alt="Yellow heavy duty cordless power drill with steel bits on rustic concrete workbench surface, precision equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS9YfeSlYZJiU467_WiKhdKvMmMPeMOaXt-FvQQCVBVq-51EKE-MngVj_XwN0zOYIrxlr8lEsn8HdXlP77HXGJoCMcb4C_RrtfjTaz7hPpEMazhevoM0dRumVRJJM-HUY2VYGsY-AW_VLsaCmDHKe40-tBktC-TA5V0cHju2RRjrpPKQHOBZuyKUnlR7raaUHz3mlF7ZDoQtFJYtk8Z4egmKs2IzgTSm1fp6Yp4J9KnAB275SY68XkWA"/>
+                            </div>
+                            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                                Herramientas
+                            </span>
+                            <span class="font-caption text-caption text-on-surface-variant -mt-1">
+                                +980 ítems
+                            </span>
+                        </a>
+                        <!-- Category 6 -->
+                        <a class="bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-xl flex flex-col items-center text-center gap-space-sm shadow-sm hover:shadow-md transition-all group" href="catalogo.html">
+                            <div class="w-20 h-20 rounded-full overflow-hidden bg-surface-container flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                                <img class="w-full h-full object-cover" data-alt="Educational wooden building blocks and cute plush animal toy on light pastel surface, bright playful kids room lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePrZybl0K4Wz0gMXXKSHpswrpo-rVW276ec83pky0w0K6zzSJmSzndd8caaQ8Wby1Zh17QHvSp8uCtWpt3P5WUXbaR_T06vlAT61mbnOhu7FbyHvGWTVWgeTvq1lA2ZFYTQ3WXqjvK_3ShBp2DDZlyY22DH-ZuS1qyLS1vSSz0XW7GB_PCc1Wx-LMWJ5h8e3SzydSNN3TSYi8QdKKjLLIQ5iAjGCPapBfNks1fhuOUuccQH-C-9fBWA"/>
+                            </div>
+                            <span class="font-headline-sm text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">
+                                Juguetes &amp; Bebés
+                            </span>
+                            <span class="font-caption text-caption text-on-surface-variant -mt-1">
+                                +1,400 ítems
+                            </span>
+                        </a>
+                    </div>
+                </section>
+                <!-- Flash Deals Banner with Countdown -->
+                <section class="w-full bg-gradient-to-r from-primary-container via-inverse-surface to-primary-container rounded-xl p-space-md md:p-space-lg text-on-primary shadow-md overflow-hidden relative">
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-space-md relative z-10">
+                        <div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left">
+                            <div class="w-14 h-14 rounded-xl bg-error text-on-error flex items-center justify-center shadow-lg animate-pulse shrink-0">
+                                <span class="material-symbols-outlined text-headline-xl">
+                                    local_fire_department
+                                </span>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-center sm:justify-start gap-2">
+                                    <span class="bg-error/20 text-error-container font-label-sm text-caption px-2 py-0.5 rounded font-bold uppercase">
+                                        Ofertas Relámpago
+                                    </span>
+                                    <span class="text-caption font-caption text-surface-container-highest">
+                                        Termina en pocas horas
+                                    </span>
+                                </div>
+                                <h3 class="font-headline-lg text-headline-lg text-surface-bright font-bold mt-1">
+                                    Precios de Liquidación Directa
+                                </h3>
+                            </div>
+                        </div>
+                        <!-- Live Clock Display -->
+                        <div class="flex items-center gap-2 bg-surface-container-lowest/10 backdrop-blur-md px-4 py-2 rounded-xl">
+                            <div class="flex flex-col items-center min-w-[50px]">
+                                <span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-tight" id="flash-hours">
+                                    04
+                                </span>
+                                <span class="font-caption text-caption text-surface-container-highest uppercase">
+                                    Horas
+                                </span>
+                            </div>
+                            <span class="font-headline-lg text-secondary-fixed pb-3 font-bold">
+                                :
+                            </span>
+                            <div class="flex flex-col items-center min-w-[50px]">
+                                <span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-tight" id="flash-minutes">
+                                    27
+                                </span>
+                                <span class="font-caption text-caption text-surface-container-highest uppercase">
+                                    Min
+                                </span>
+                            </div>
+                            <span class="font-headline-lg text-secondary-fixed pb-3 font-bold">
+                                :
+                            </span>
+                            <div class="flex flex-col items-center min-w-[50px]">
+                                <span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-tight" id="flash-seconds">
+                                    49
+                                </span>
+                                <span class="font-caption text-caption text-surface-container-highest uppercase">
+                                    Seg
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Featured Products Catalog Section -->
+                <section class="w-full flex flex-col gap-space-md" id="catalogo">
+                    <!-- Header & Interactive Category Tabs -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+                        <div>
+                            <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+                                Selección Especial
+                            </span>
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                                Catálogo Recomendado
+                            </h2>
+                        </div>
+                        <!-- Tabs Switcher -->
+                        <div class="flex items-center gap-1 bg-surface-container p-1 rounded-lg">
+                            <button class="tab-btn active-tab px-3 py-1.5 rounded-md font-label-md text-label-md font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all" data-tab="best" type="button">
+                                Más Vendidos
+                            </button>
+                            <button class="tab-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" data-tab="new" type="button">
+                                Nuevos Ingresos
+                            </button>
+                            <button class="tab-btn px-3 py-1.5 rounded-md font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" data-tab="deals" type="button">
+                                Ofertas Imperdibles
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Grid (4 items desktop, 2 mobile) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+                        <!-- Product Card 1 -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
+                            <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
+                                <span class="bg-error text-on-error font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
+                                    -25% OFF
+                                </span>
+                                <span class="bg-secondary text-on-secondary font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
+                                    Envío Gratis
+                                </span>
+                            </div>
+                            <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    favorite
+                                </span>
+                            </button>
+                            <!-- Product Image -->
+                            <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
+                                <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Ultra-slim high resolution smart television 55 inch display with ultra thin bezels showing vibrant mountain landscape colors, studio presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRVep_-LP7QLdPtoJI_5sou5puv_7wgtKkzNKp_QGqKt-mP-ND6C9Nxp5cnoeHvcF-VDp2kpmuH7v4a3ajUHbcbXV6jc9Zu23O9oQYsS4kHgLFHLdB-VgWnmv6S9NiRaMQoNpkzkUBI9Hmd977CcWMICDZRabjFCYU2upLi5YxyXr2gT5IlUlOkmc0ogl6QBiBeQn7Un3nMeWrVKFTeV0GQbS8-J3nhxYKzPyD83DjZeTM0gBbPr4pgw"/>
+                            </div>
+                            <div class="flex flex-col gap-2 mt-4 flex-1">
+                                <div class="flex items-center gap-1 text-secondary-fixed-dim">
+                                    <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="font-label-sm text-label-sm font-bold text-on-surface">
+                                        4.9
+                                    </span>
+                                    <span class="font-caption text-caption text-on-surface-variant">
+                                        (142 reseñas)
+                                    </span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
+                                    Smart TV 55" Crystal 4K UHD con Procesador Crystal y Tizen OS
+                                </h3>
+                                <div class="mt-auto pt-2 flex flex-col">
+                                    <div class="flex items-baseline gap-2">
+                                        <span class="font-price-md text-price-md text-on-surface font-bold">
+                                            Q. 2,999.00
+                                        </span>
+                                        <span class="font-body-sm text-body-sm text-outline line-through">
+                                            Q. 3,999.00
+                                        </span>
+                                    </div>
+                                    <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
+                                        12 Visacuotas de Q. 249.92
+                                    </span>
+                                    <!-- Stock meter -->
+                                    <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+                                        <div class="bg-secondary h-full rounded-full w-4/5"></div>
+                                    </div>
+                                    <span class="font-caption text-caption text-on-surface-variant mt-1">
+                                        Solo quedan 6 unidades
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
+                                <span class="material-symbols-outlined text-label-md">
+                                    add_shopping_cart
+                                </span>
+                                <span>
+                                    Agregar al Carrito
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Product Card 2 -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
+                            <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
+                                <span class="bg-error text-on-error font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
+                                    -30% OFF
+                                </span>
+                            </div>
+                            <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    favorite
+                                </span>
+                            </button>
+                            <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
+                                <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Space gray modern lightweight laptop with edge-to-edge keyboard and glossy glass trackpad, open lid perspective on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7TtPURwEgFtUJBQoSQpIEWvEi99J9INN_t9zIGRb2RLYgwE0myyRqUXltQkakAjPS6XYS8S2n0NHRiEpfUJoj32v_tYUU0DurKR2uAWQNv70fEn8XhMCpdzvdB_-INRmMEBjJ2KsfWToec9MPZbGJvxvS434RskqPQkzwbbBqu8TRxlNfQ2EwIfJCkj0mP-kHBRVfjm6jcDm5q1zawqaFUGyjk1cpQMfRy9i1zIkRpDmGQrv3iQ1j3Q"/>
+                            </div>
+                            <div class="flex flex-col gap-2 mt-4 flex-1">
+                                <div class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="font-label-sm text-label-sm font-bold text-on-surface">
+                                        4.8
+                                    </span>
+                                    <span class="font-caption text-caption text-on-surface-variant">
+                                        (88 reseñas)
+                                    </span>
+                                </div>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
+                                Laptop Ultraliviana 15.6" Intel Core i5, 16GB RAM, 512GB SSD NVMe
+                            </h3>
+                            <div class="mt-auto pt-2 flex flex-col">
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-price-md text-price-md text-on-surface font-bold">
+                                        Q. 4,499.00
+                                    </span>
+                                    <span class="font-body-sm text-body-sm text-outline line-through">
+                                        Q. 6,429.00
+                                    </span>
+                                </div>
+                                <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
+                                    18 Visacuotas de Q. 249.94
+                                </span>
+                                <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+                                    <div class="bg-secondary h-full rounded-full w-2/3"></div>
+                                </div>
+                                <span class="font-caption text-caption text-on-surface-variant mt-1">
+                                    11 unidades disponibles
+                                </span>
+                            </div>
+                            <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
+                                <span class="material-symbols-outlined text-label-md">
+                                    add_shopping_cart
+                                </span>
+                                <span>
+                                    Agregar al Carrito
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Product Card 3 -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
+                            <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
+                                <span class="bg-error text-on-error font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
+                                    -20% OFF
+                                </span>
+                            </div>
+                            <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    favorite
+                                </span>
+                            </button>
+                            <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
+                                <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Stainless steel high capacity digital multi-function air fryer with touch panel screen and crisper basket, studio culinary product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp1N3AkcSc4Jn4vfZXinLgMiTYctr_w-cqZKNVsuhHebqyyy09hCJpppR9QFZTQc3b4K1rqKb6tWBr6w1tYaSx9ESZ4bhacMc2AzrWrILv7zgaWaD5uKSOy3SA6Pj1q8zAxBpL6AplAKsKeuSWNxJ0gjov1ltRJsIfhdr76T5tUVrFI7FcKSMswWQ8LK-Dgmnz0FdQ8XTydU0k9OXedlGNfYG1LXmU78wsRmOdsob17IvEm7yHLfjN8w"/>
+                            </div>
+                            <div class="flex flex-col gap-2 mt-4 flex-1">
+                                <div class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="font-label-sm text-label-sm font-bold text-on-surface">
+                                        5.0
+                                    </span>
+                                    <span class="font-caption text-caption text-on-surface-variant">
+                                        (310 reseñas)
+                                    </span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
+                                    Freidora de Aire Digital XL 6.5 Litros con 12 Funciones Preprogramadas
+                                </h3>
+                                <div class="mt-auto pt-2 flex flex-col">
+                                    <div class="flex items-baseline gap-2">
+                                        <span class="font-price-md text-price-md text-on-surface font-bold">
+                                            Q. 699.00
+                                        </span>
+                                        <span class="font-body-sm text-body-sm text-outline line-through">
+                                            Q. 875.00
+                                        </span>
+                                    </div>
+                                    <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
+                                        6 Visacuotas de Q. 116.50
+                                    </span>
+                                </div>
+                                <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+                                    <div class="bg-secondary h-full rounded-full w-9/12"></div>
+                                </div>
+                                <span class="font-caption text-caption text-on-surface-variant mt-1">
+                                    Alta demanda en Ciudad de Guatemala
+                                </span>
+                            </div>
+                            <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
+                                <span class="material-symbols-outlined text-label-md">
+                                    add_shopping_cart
+                                </span>
+                                <span>
+                                    Agregar al Carrito
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Product Card 4 -->
+                        <div class="bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 group relative">
+                            <div class="absolute top-space-md left-space-md z-10 flex flex-col gap-1">
+                                <span class="bg-secondary text-on-secondary font-label-sm text-caption px-2 py-0.5 rounded font-bold shadow-sm">
+                                    Bestseller
+                                </span>
+                            </div>
+                            <button aria-label="Agregar a favoritos" class="absolute top-space-md right-space-md z-10 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" type="button">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    favorite
+                                </span>
+                            </button>
+                            <div class="w-full aspect-square rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center p-4">
+                                <img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" data-alt="Over-ear wireless noise cancelling headphones in matte silver finish, premium memory foam cushions, minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vp1RNXlbSmm6hPlAXm3cF7bBF3NrPHVXOUa4CwyFljPaLuqx3WD0FJjiU9RGpsUB2Y0coaeFLWtwaBnyQ6l0Zh3fbOwI2NGIBIitukQ-71eiCabrTpoltxNlrNIuFmbFVn0_M7MbRRx64BzVqvi_FaXUhjllTtxsFnSR7Iqc2BsfnlKH0Ww-KNwiZb7O1QMwBnbocb41xD3ILz_oicuCt0h4gdS7s5vQk8niiUM242UFsRlJeioJAw"/>
+                            </div>
+                            <div class="flex flex-col gap-2 mt-4 flex-1">
+                                <div class="flex items-center gap-1">
+                                    <span class="material-symbols-outlined text-label-md text-secondary" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="font-label-sm text-label-sm font-bold text-on-surface">
+                                        4.7
+                                    </span>
+                                    <span class="font-caption text-caption text-on-surface-variant">
+                                        (95 reseñas)
+                                    </span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2">
+                                    Audífonos Inalámbricos con Cancelación Activa de Ruido y Micrófono HD
+                                </h3>
+                                <div class="mt-auto pt-2 flex flex-col">
+                                    <div class="flex items-baseline gap-2">
+                                        <span class="font-price-md text-price-md text-on-surface font-bold">
+                                            Q. 450.00
+                                        </span>
+                                        <span class="font-body-sm text-body-sm text-outline line-through">
+                                            Q. 580.00
+                                        </span>
+                                    </div>
+                                    <span class="font-label-sm text-caption text-on-primary-fixed-variant font-semibold">
+                                        3 Visacuotas de Q. 150.00
+                                    </span>
+                                    <div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+                                        <div class="bg-secondary h-full rounded-full w-1/2"></div>
+                                    </div>
+                                    <span class="font-caption text-caption text-on-surface-variant mt-1">
+                                        24 unidades disponibles
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="mt-4 w-full bg-secondary hover:bg-on-secondary-container active:scale-95 text-on-secondary py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
+                                <span class="material-symbols-outlined text-label-md">
+                                    add_shopping_cart
+                                </span>
+                                <span>
+                                    Agregar al Carrito
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Department / Delivery Zone Banner -->
+                <section class="w-full bg-surface-container-low rounded-xl p-space-md md:p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+                    <div class="flex items-center gap-space-md">
+                        <div class="w-14 h-14 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-headline-lg">
+                                pin_drop
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+                                ¿En qué departamento te encuentras?
+                            </h3>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                Calcula tarifas de flete exactas y tiempo de entrega garantizado con Guatex o Cargo Expreso.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center gap-2 w-full lg:w-auto">
+                        <select class="w-full sm:w-64 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2.5 rounded-lg focus:outline-none shadow-sm cursor-pointer">
+                            <option>
+                                Guatemala (Capital &amp; Municipios)
+                            </option>
+                            <option>
+                                Quetzaltenango
+                            </option>
+                            <option>
+                                Sacatepéquez (Antigua)
+                            </option>
+                            <option>
+                                Escuintla
+                            </option>
+                            <option>
+                                Alta Verapaz (Cobán)
+                            </option>
+                            <option>
+                                Chimaltenango
+                            </option>
+                            <option>
+                                Petén
+                            </option>
+                        </select>
+                        <button class="w-full sm:w-auto bg-primary-container hover:bg-inverse-surface text-on-primary font-label-md text-label-md px-4 py-2.5 rounded-lg font-semibold transition-colors whitespace-nowrap" type="button">
+                            Actualizar Zona
+                        </button>
+                    </div>
+                </section>
+                <!-- Customer Trust & Verified Reviews in Guatemala -->
+                <section class="w-full flex flex-col gap-space-md">
+                    <div class="text-center max-w-xl mx-auto">
+                        <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+                            Confianza Garantizada
+                        </span>
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+                            Clientes Satisfechos en Toda Guatemala
+                        </h2>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                            Más de 45,000 entregas completadas de forma segura y puntual este año.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+                        <!-- Review 1 -->
+                        <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-1 text-secondary">
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface italic">
+                                    "Pedí un Smart TV un martes por la tarde y para el miércoles al mediodía ya lo tenía instalado en mi casa en Mixco. Pagué contra entrega sin problema."
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-3 pt-2">
+                                <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container font-bold flex items-center justify-center font-headline-sm">
+                                    CR
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-sm text-label-md text-on-surface font-bold">
+                                        Carlos Rodas
+                                    </span>
+                                    <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                        <span class="material-symbols-outlined text-caption text-secondary">
+                                            verified
+                                        </span>
+                                        Mixco, Guatemala
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-1 text-secondary">
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface italic">
+                                    "Excelente servicio hacia Quetzaltenango. Aproveché las 12 Visacuotas para la laptop de la universidad de mi hija. Llegó todo sellado de fábrica."
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-3 pt-2">
+                                <div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-primary-fixed-variant font-bold flex items-center justify-center font-headline-sm">
+                                    MA
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-sm text-label-md text-on-surface font-bold">
+                                        Marta de León
+                                    </span>
+                                    <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                        <span class="material-symbols-outlined text-caption text-secondary">
+                                            verified
+                                        </span>
+                                        Quetzaltenango
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between gap-space-sm">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-1 text-secondary">
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star
+                                    </span>
+                                    <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                        star half
+                                    </span>
+                                </div>
+                                <p class="font-body-sm text-body-sm text-on-surface italic">
+                                    "El soporte de WhatsApp resolvió mis dudas de medidas para un juego de sala en cuestión de 3 minutos. MercadoGo es mi tienda en línea de cabecera."
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-3 pt-2">
+                                <div class="w-10 h-10 rounded-full bg-surface-container text-on-surface font-bold flex items-center justify-center font-headline-sm">
+                                    EA
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="font-headline-sm text-label-md text-on-surface font-bold">
+                                        Eduardo Aguilar
+                                    </span>
+                                    <span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+                                        <span class="material-symbols-outlined text-caption text-secondary">
+                                            verified
+                                        </span>
+                                        Carretera a El Salvador
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Official Brand Partners Strip -->
+                <section class="w-full bg-surface-container-lowest py-space-md px-space-lg rounded-xl shadow-sm">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+                        <span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider shrink-0">
+                            Distribuidores Oficiales:
+                        </span>
+                        <div class="flex flex-wrap items-center justify-center md:justify-end gap-6 md:gap-10 text-outline font-headline-md font-bold text-headline-md tracking-widest opacity-70">
+                            <span class="hover:text-primary transition-colors cursor-pointer">
+                                SAMSUNG
+                            </span>
+                            <span class="hover:text-primary transition-colors cursor-pointer">
+                                APPLE
+                            </span>
+                            <span class="hover:text-primary transition-colors cursor-pointer">
+                                LG
+                            </span>
+                            <span class="hover:text-primary transition-colors cursor-pointer">
+                                SONY
+                            </span>
+                            <span class="hover:text-primary transition-colors cursor-pointer">
+                                PHILIPS
+                            </span>
+                            <span class="hover:text-primary transition-colors cursor-pointer">
+                                NIKE
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <script>
+                // Countdown Timer Micro-interaction
+                let totalSeconds = 4 * 3600 + 27 * 60 + 49;
+                const hElem = document.getElementById('flash-hours');
+                const mElem = document.getElementById('flash-minutes');
+                const sElem = document.getElementById('flash-seconds');
+
+                setInterval(() => {
+                  if (totalSeconds > 0) {
+                    totalSeconds--;
+                    const hours = Math.floor(totalSeconds / 3600);
+                    const minutes = Math.floor((totalSeconds % 3600) / 60);
+                    const seconds = totalSeconds % 60;
+                    if (hElem) hElem.innerText = String(hours).padStart(2, '0');
+                    if (mElem) mElem.innerText = String(minutes).padStart(2, '0');
+                    if (sElem) sElem.innerText = String(seconds).padStart(2, '0');
+                  }
+                }, 1000);
+
+                // Tab switcher visual toggles
+                document.querySelectorAll('.tab-btn').forEach(button => {
+                  button.addEventListener('click', () => {
+                    document.querySelectorAll('.tab-btn').forEach(btn => {
+                      btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+                      btn.classList.add('text-on-surface-variant');
+                    });
+                    button.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+                    button.classList.remove('text-on-surface-variant');
+                  });
+                });
+            </script>
+        </main>
+        <footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+            <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+                <div class="flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-xs mb-1">
+                        <span class="font-headline-md text-headline-md text-primary font-bold">
+                            MercadoGo
+                        </span>
+                        <span class="bg-secondary text-on-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                            GT
                         </span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Official Brand Partners Strip -->
-    <section class="w-full bg-surface-container-lowest py-space-md px-space-lg rounded-xl shadow-sm">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
-            <span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider shrink-0">
-                Distribuidores Oficiales:
-            </span>
-            <div class="flex flex-wrap items-center justify-center md:justify-end gap-6 md:gap-10 text-outline font-headline-md font-bold text-headline-md tracking-widest opacity-70">
-                <span class="hover:text-primary transition-colors cursor-pointer">
-                    SAMSUNG
-                </span>
-                <span class="hover:text-primary transition-colors cursor-pointer">
-                    APPLE
-                </span>
-                <span class="hover:text-primary transition-colors cursor-pointer">
-                    LG
-                </span>
-                <span class="hover:text-primary transition-colors cursor-pointer">
-                    SONY
-                </span>
-                <span class="hover:text-primary transition-colors cursor-pointer">
-                    PHILIPS
-                </span>
-                <span class="hover:text-primary transition-colors cursor-pointer">
-                    NIKE
-                </span>
-            </div>
-        </div>
-    </section>
-</div>
-
-
-<script>
-  // Countdown Timer Micro-interaction
-  let totalSeconds = 4 * 3600 + 27 * 60 + 49;
-  const hElem = document.getElementById('flash-hours');
-  const mElem = document.getElementById('flash-minutes');
-  const sElem = document.getElementById('flash-seconds');
-
-  setInterval(() => {
-    if (totalSeconds > 0) {
-      totalSeconds--;
-      const hours = Math.floor(totalSeconds / 3600);
-      const minutes = Math.floor((totalSeconds % 3600) / 60);
-      const seconds = totalSeconds % 60;
-      if (hElem) hElem.innerText = String(hours).padStart(2, '0');
-      if (mElem) mElem.innerText = String(minutes).padStart(2, '0');
-      if (sElem) sElem.innerText = String(seconds).padStart(2, '0');
-    }
-  }, 1000);
-
-  // Tab switcher visual toggles
-  document.querySelectorAll('.tab-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
-        btn.classList.add('text-on-surface-variant');
-      });
-      button.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
-      button.classList.remove('text-on-surface-variant');
-    });
-  });
-</script>
-</main>
-<footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-    <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
-        <div class="flex flex-col gap-space-sm">
-            <div class="flex items-center gap-space-xs mb-1">
-                <span class="font-headline-md text-headline-md text-primary font-bold">MercadoGo</span>
-                <span class="bg-secondary text-on-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">GT</span>
-            </div>
-            <p class="text-body-sm font-body-sm text-on-surface-variant">La tienda departamental en línea líder en Guatemala, con entrega rápida, garantía certificada y facilidades de pago en Visacuotas.</p>
-            <div class="flex flex-col gap-1.5 mt-2 text-label-sm font-label-sm text-on-surface-variant">
-                <a class="hover:text-secondary transition-colors" href="#">Tiendas Físicas en Guatemala</a>
-                <a class="hover:text-secondary transition-colors" href="#">Sostenibilidad y Comunidad</a>
-                <a class="hover:text-secondary transition-colors" href="#">Bolsa de Empleo</a>
-            </div>
-        </div>
-        <div class="flex flex-col gap-space-sm">
-            <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Servicio al Cliente</h3>
-            <ul class="flex flex-col gap-2 text-label-sm font-label-sm text-on-surface-variant">
-                <li>
-                    <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
-                        <span class="material-symbols-outlined text-label-sm">local_shipping
-
-                        </span>Rastreo de Pedidos
-                    </a>
-                </li>
-                <li>
-                    <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
-                        <span class="material-symbols-outlined text-label-sm">sync
-
-                        </span>Políticas de Devolución (30 días)
-                    </a>
-                </li>
-                <li>
-                    <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
-                        <span class="material-symbols-outlined text-label-sm">verified
-
-                        </span>Garantía Oficial de Fabrica
-                    </a>
-                </li>
-                <li>
-                    <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
-                        <span class="material-symbols-outlined text-label-sm">help
-
-                        </span>Preguntas Frecuentes
-                    </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-space-sm">
-                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Métodos de Pago Seguros</h3>
-                <p class="text-body-sm font-body-sm text-on-surface-variant">Transacciones 100% cifradas y protegidas con certificado de seguridad SSL.</p>
-                <div class="grid grid-cols-2 gap-2 text-caption font-caption text-on-surface">
-                    <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-secondary text-label-md">credit_card</span>
-                        <span>Visacuotas Hasta 18x</span>
-                    </div>
-                    <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-secondary text-label-md">payments</span>
-                        <span>Pago Contra Entrega</span>
-                    </div>
-                    <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-secondary text-label-md">point_of_sale</span>
-                        <span>POS Móvil a Domicilio</span>
-                    </div>
-                    <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
-                        <span class="material-symbols-outlined text-secondary text-label-md">shield_with_heart</span>
-                        <span>Visa / Mastercard</span>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        La tienda departamental en línea líder en Guatemala, con entrega rápida, garantía certificada y facilidades de pago en Visacuotas.
+                    </p>
+                    <div class="flex flex-col gap-1.5 mt-2 text-label-sm font-label-sm text-on-surface-variant">
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Tiendas Físicas en Guatemala
+                        </a>
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Sostenibilidad y Comunidad
+                        </a>
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Bolsa de Empleo
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="flex flex-col gap-space-sm">
-                <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Suscríbete y Ahorra</h3>
-                <p class="text-body-sm font-body-sm text-on-surface-variant">Obtén un cupón de <strong>Q.50 de descuento</strong> en tu primera orden al registrarte a nuestro boletín semanal.</p>
-                <form class="flex flex-col gap-2" onsubmit="event.preventDefault();">
-                    <div class="relative w-full">
-                        <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm.text-body-sm.px-3.py-2.rounded-lg.focus:outline-none.focus:bg-surface-container-lowest" placeholder="tucorreo@ejemplo.gt" type="email"/>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Servicio al Cliente
+                    </h3>
+                    <ul class="flex flex-col gap-2 text-label-sm font-label-sm text-on-surface-variant">
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="cuenta.html">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    local_shipping
+                                </span>
+                                Rastreo de Pedidos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    sync
+                                </span>
+                                Políticas de Devolución (30 días)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    verified
+                                </span>
+                                Garantía Oficial de Fabrica
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    help
+                                </span>
+                                Preguntas Frecuentes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Métodos de Pago Seguros
+                    </h3>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        Transacciones 100% cifradas y protegidas con certificado de seguridad SSL.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2 text-caption font-caption text-on-surface">
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                credit_card
+                            </span>
+                            <span>
+                                Visacuotas Hasta 18x
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                payments
+                            </span>
+                            <span>
+                                Pago Contra Entrega
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                point_of_sale
+                            </span>
+                            <span>
+                                POS Móvil a Domicilio
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                shield_with_heart
+                            </span>
+                            <span>
+                                Visa / Mastercard
+                            </span>
+                        </div>
                     </div>
-                    <button class="bg-secondary.text-on-secondary.hover:bg-on-secondary-container.px-4.py-2.rounded-lg.font-label-md.text-label-md.font-semibold.transition-colors" type="submit">Quiero mi Cupón
-                    </button>
-                </form>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Suscríbete y Ahorra
+                    </h3>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        Obtén un cupón de
+                        <strong>
+                            Q.50 de descuento
+                        </strong>
+                        en tu primera orden al registrarte a nuestro boletín semanal.
+                    </p>
+                    <form class="flex flex-col gap-2" onsubmit="event.preventDefault();">
+                        <div class="relative w-full">
+                            <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm.text-body-sm.px-3.py-2.rounded-lg.focus:outline-none.focus:bg-surface-container-lowest" placeholder="tucorreo@ejemplo.gt" type="email"/>
+                        </div>
+                        <button class="bg-secondary.text-on-secondary.hover:bg-on-secondary-container.px-4.py-2.rounded-lg.font-label-md.text-label-md.font-semibold.transition-colors" type="submit">
+                            Quiero mi Cupón
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="bg-surface-container-low py-4">
-            <div class="max-w-[1320px] mx-auto px-margin.md:px-margin-tablet.lg:px-margin-desktop.text-center.text-on-surface-variant.text-label-sm.font-label-sm">© 2025 MercadoGo Guatemala S.A. Todos los derechos reservados. Precios expresados en Quetzales (GTQ) incluyen IVA.
+            <div class="bg-surface-container-low py-4">
+                <div class="max-w-[1320px] mx-auto px-margin.md:px-margin-tablet.lg:px-margin-desktop.text-center.text-on-surface-variant.text-label-sm.font-label-sm">
+                    © 2025 MercadoGo Guatemala S.A. Todos los derechos reservados. Precios expresados en Quetzales (GTQ) incluyen IVA.
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
