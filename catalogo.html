@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'error': '#ba1a1a', 'surface-container-highest': '#d3e4fe', 'on-surface': '#0b1c30', 'primary': '#000000', 'primary-fixed': '#dae2fd', 'on-primary-fixed-variant': '#3f465c', 'outline': '#76777d', 'on-error-container': '#93000a', 'inverse-primary': '#bec6e0', 'inverse-on-surface': '#eaf1ff', 'on-secondary-container': '#00714d', 'on-error': '#ffffff', 'tertiary': '#000000', 'surface-dim': '#cbdbf5', 'on-tertiary-fixed-variant': '#264191', 'on-secondary-fixed-variant': '#005236', 'surface-container-low': '#eff4ff', 'on-secondary': '#ffffff', 'primary-fixed-dim': '#bec6e0', 'secondary-container': '#6cf8bb', 'on-surface-variant': '#45464d', 'secondary-fixed-dim': '#4edea3', 'primary-container': '#131b2e', 'tertiary-fixed': '#dce1ff', 'surface-container-high': '#dce9ff', 'on-background': '#0b1c30', 'on-primary-fixed': '#131b2e', 'tertiary-container': '#00164e', 'secondary': '#006c49', 'on-secondary-fixed': '#002113', 'tertiary-fixed-dim': '#b6c4ff', 'on-primary-container': '#7c839b', 'surface-container': '#e5eeff', 'surface-variant': '#d3e4fe', 'on-tertiary-container': '#6780d3', 'surface-container-lowest': '#ffffff', 'surface-tint': '#565e74', 'background': '#f8f9ff', 'surface': '#f8f9ff', 'surface-bright': '#f8f9ff', 'secondary-fixed': '#6ffbbe', 'error-container': '#ffdad6', 'on-tertiary-fixed': '#00164e', 'on-primary': '#ffffff', 'inverse-surface': '#213145', 'on-tertiary': '#ffffff', 'outline-variant': '#c6c6cd' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'space-lg': '1.5rem', 'margin': '1rem', 'margin-tablet': '2rem', 'gutter': '1rem', 'space-xs': '0.25rem', 'space-xl': '2rem', 'space-sm': '0.5rem', 'space-md': '1rem', 'margin-desktop': '2.5rem', 'gutter-desktop': '1.5rem' }, 'fontFamily': { 'headline-xl': ['Outfit'], 'caption': ['Inter'], 'price-md': ['Outfit'], 'body-md': ['Inter'], 'label-md': ['Inter'], 'headline-sm': ['Outfit'], 'headline-md': ['Outfit'], 'display-lg-mobile': ['Outfit'], 'headline-lg': ['Outfit'], 'price-lg': ['Outfit'], 'body-sm': ['Inter'], 'headline-xl-mobile': ['Outfit'], 'display-lg': ['Outfit'], 'label-sm': ['Inter'], 'body-lg': ['Inter'] }, 'fontSize': { 'headline-xl': ['36px', { 'lineHeight': '44px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'caption': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.03em', 'fontWeight': '500' }], 'price-md': ['20px', { 'lineHeight': '24px', 'fontWeight': '700' }], 'body-md': ['16px', { 'lineHeight': '24px', 'fontWeight': '400' }], 'label-md': ['14px', { 'lineHeight': '20px', 'fontWeight': '500' }], 'headline-sm': ['16px', { 'lineHeight': '24px', 'fontWeight': '600' }], 'headline-md': ['20px', { 'lineHeight': '28px', 'fontWeight': '600' }], 'display-lg-mobile': ['32px', { 'lineHeight': '40px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'headline-lg': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'price-lg': ['28px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'body-sm': ['14px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'headline-xl-mobile': ['28px', { 'lineHeight': '36px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'display-lg': ['48px', { 'lineHeight': '56px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'label-sm': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.02em', 'fontWeight': '600' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'fontWeight': '400' }] } } } };</script>
+    </head>
+    <body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
+        <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+            <div class="bg-primary-container text-on-primary text-center py-2 px-margin text-label-sm font-label-sm flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-label-md text-secondary-fixed">
+                    local_shipping
+                </span>
+                <span>
+                    Envío GRATIS a toda Guatemala en compras mayores a Q.350 | Entregas express en 24h a Ciudad de Guatemala
+                </span>
+            </div>
+            <div class="h-20 max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter-desktop">
+                <div class="flex items-center gap-space-md">
+                    <img alt="MercadoGo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXakRMm9XimHwF6e65ZkcLN0fc-LZZvwHOORzsUljDCFUZ1wbMB4X-_lhWhTmjj9fSZil6N2qPpZQOQg9ZjGrJid002N6SujVuWi46DfbVTgVf15V9TQnTa3YQwdZzmLBy4lo4YvV14S2D3xPWdKXcXrhboKZabPe9oTvoJm88oxsg_sE6cIJohuzp2K1bWNqJ2lKUkPWDxh4n_rU3sH6hB2wVbq_CbcU4AuyKkHVd9Ucf1H8qEfaB1cxN"/>
+                    <span class="font-headline-lg text-headline-lg text-primary hidden sm:inline-block tracking-tight">
+                        MercadoGo
+                    </span>
+                </div>
+                <div class="hidden lg:flex items-center">
+                    <button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-md py-2 rounded-lg text-on-surface font-label-md text-label-md transition-colors" type="button">
+                        <span class="material-symbols-outlined text-label-md">
+                            category
+                        </span>
+                        <span>
+                            Todas las Categorías
+                        </span>
+                        <span class="material-symbols-outlined text-label-sm">
+                            expand_more
+                        </span>
+                    </button>
+                </div>
+                <div class="flex-1 max-w-2xl mx-space-sm">
+                    <div class="relative flex items-center w-full">
+                        <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-4 pr-12 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.05)] transition-all" placeholder="Buscar en más de 20,000 productos: tecnología, hogar, moda..." type="search"/>
+                        <button aria-label="Buscar" class="absolute right-1 bg-secondary text-on-secondary hover:bg-on-secondary-container p-2 rounded-lg flex items-center justify-center transition-colors" type="button">
+                            <span class="material-symbols-outlined text-label-md">
+                                search
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-space-md shrink-0">
+                    <div class="hidden xl:flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm cursor-pointer hover:text-on-surface transition-colors">
+                        <span class="material-symbols-outlined text-label-md text-secondary">
+                            location_on
+                        </span>
+                        <span>
+                            GTQ (Q.) · Guatemala
+                        </span>
+                    </div>
+                    <a class="hidden sm:flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" data-path="orders" href="#">
+                        <span class="material-symbols-outlined text-label-md">
+                            local_shipping
+                        </span>
+                        <span class="hidden md:inline">
+                            Mis Pedidos
+                        </span>
+                    </a>
+                    <div class="flex items-center gap-2 cursor-pointer">
+                        <img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8WYghp3r0GgD3LEjWTs6Dj0q11Px0EQfnUFgs35z4hCPaOxl2AaYH5Rb0QXc2urcbfHEWuGYff3OlIjKrO-IlOJweSD2FrpMIptmHGTtlZAxnCEktGTDLhJwkrHta6jFSdeedQtdLQRKFBCcPSQtDInskChTo9a-HYBi-GYXRLThXNvcNUAXmaQ8eU3rY1axJiZvfgBHlFqHjyoPWzOtt-cKHYkzi-nCXUzHAaUHihNPRt1wUA78DfA"/>
+                        <div class="hidden lg:flex flex-col text-left">
+                            <span class="text-caption font-caption text-on-surface-variant">
+                                Hola, Sofía
+                            </span>
+                            <span class="text-label-sm font-label-sm text-on-surface font-semibold">
+                                Mi Cuenta
+                            </span>
+                        </div>
+                    </div>
+                    <a class="flex items-center gap-2 bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed px-3 py-2 rounded-lg transition-colors" data-path="cart" href="#">
+                        <div class="relative flex items-center">
+                            <span class="material-symbols-outlined text-headline-sm">
+                                shopping_bag
+                            </span>
+                            <span class="absolute -top-2 -right-2 bg-secondary text-on-secondary font-label-sm text-caption rounded-full w-5 h-5 flex items-center justify-center font-bold">
+                                3
+                            </span>
+                        </div>
+                        <div class="hidden md:flex flex-col text-left leading-none">
+                            <span class="text-caption font-caption opacity-80">
+                                Total
+                            </span>
+                            <span class="font-headline-sm text-label-sm font-bold">
+                                Q. 1,450.00
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-surface-container-low">
+                <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between overflow-x-auto py-2.5 gap-gutter-desktop">
+                    <nav class="flex items-center gap-space-md shrink-0" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="flash-deals" href="#">
+                            Ofertas Flash
+                        </a>
+                        <a aria-current="page" class="px-2.5 py-1 transition-colors whitespace-nowrap bg-primary-container text-on-primary font-bold rounded-lg" data-path="tech-catalog" href="#">
+                            Tecnología
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="home-furniture" href="#">
+                            Hogar &amp; Muebles
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="fashion-footwear" href="#">
+                            Moda &amp; Calzado
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="health-beauty" href="#">
+                            Salud &amp; Belleza
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="groceries" href="#">
+                            Supermercado &amp; Despensa
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="sports" href="#">
+                            Deportes
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="outlet-liquidation" href="#">
+                            Liquidación Outlet
+                        </a>
+                    </nav>
+                    <div class="hidden xl:flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm shrink-0">
+                        <span class="material-symbols-outlined text-secondary text-label-md">
+                            support_agent
+                        </span>
+                        <span>
+                            Atención al Cliente:
+                            <strong class="text-primary">
+                                +502 2345-6789
+                            </strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="w-full pt-36 bg-surface flex-1 max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+            <div class="flex flex-col w-full">
+                <!-- Breadcrumbs & Quick Category Pills -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-md">
+                    <div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant flex-wrap">
+                        <a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+                            <span class="material-symbols-outlined text-label-md">
+                                home
+                            </span>
+                            <span>
+                                Inicio
+                            </span>
+                        </a>
+                        <span class="material-symbols-outlined text-caption opacity-40">
+                            chevron_right
+                        </span>
+                        <a class="hover:text-primary transition-colors" href="#">
+                            Catálogo General
+                        </a>
+                        <span class="material-symbols-outlined text-caption opacity-40">
+                            chevron_right
+                        </span>
+                        <span class="text-on-surface font-semibold">
+                            Todos los Productos
+                        </span>
+                        <span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full font-label-sm text-caption ml-1">
+                            1,248 artículos
+                        </span>
+                    </div>
+                    <!-- Express Delivery Notice Pill -->
+                    <div class="flex items-center gap-2 bg-secondary-container/40 text-on-secondary-container px-3 py-1.5 rounded-full text-caption font-caption self-start md:self-auto">
+                        <span class="material-symbols-outlined text-label-sm text-secondary" style="font-variation-settings: 'FILL' 1;">
+                            bolt
+                        </span>
+                        <span>
+                            Entregas express en 24h para Zona Central y Departamentos
+                        </span>
+                    </div>
+                </div>
+                <!-- Catalog Main Container with Sidebar + Product Grid -->
+                <div class="flex flex-col lg:flex-row gap-gutter-desktop items-start">
+                    <!-- LEFT SIDEBAR: ADVANCED FILTERS -->
+                    <aside class="w-full lg:w-72 shrink-0 bg-surface-container-lowest rounded-xl p-space-md shadow-sm lg:sticky lg:top-40 space-y-space-md">
+                        <!-- Filter Header -->
+                        <div class="flex items-center justify-between pb-space-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-headline-sm text-primary">
+                                    tune
+                                </span>
+                                <h2 class="font-headline-sm text-headline-sm text-on-surface">
+                                    Filtros Avanzados
+                                </h2>
+                            </div>
+                            <button class="text-caption font-caption text-secondary hover:underline font-semibold transition-all" id="reset-all-filters">
+                                Limpiar Todo
+                            </button>
+                        </div>
+                        <!-- Categories Filter -->
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between cursor-pointer py-1" onclick="document.getElementById('cat-list').classList.toggle('hidden')">
+                                <span class="font-label-md text-label-md font-semibold text-on-surface">
+                                    Categorías
+                                </span>
+                                <span class="material-symbols-outlined text-label-md text-on-surface-variant">
+                                    expand_less
+                                </span>
+                            </div>
+                            <div class="space-y-1.5 text-body-sm font-body-sm" id="cat-list">
+                                <label class="flex items-center justify-between hover:bg-surface-container-low px-2 py-1 rounded cursor-pointer group">
+                                    <div class="flex items-center gap-2">
+                                        <input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+                                        <span class="text-on-surface group-hover:text-primary font-medium">
+                                            Smartphones &amp; Accesorios
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+                                        320
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between hover:bg-surface-container-low px-2 py-1 rounded cursor-pointer group">
+                                    <div class="flex items-center gap-2">
+                                        <input checked="" class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+                                        <span class="text-on-surface group-hover:text-primary">
+                                            Laptops &amp; Cómputo
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+                                        145
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between hover:bg-surface-container-low px-2 py-1 rounded cursor-pointer group">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+                                        <span class="text-on-surface group-hover:text-primary">
+                                            Audio &amp; Audífonos
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+                                        210
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between hover:bg-surface-container-low px-2 py-1 rounded cursor-pointer group">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+                                        <span class="text-on-surface group-hover:text-primary">
+                                            Muebles &amp; Oficina
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+                                        180
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between hover:bg-surface-container-low px-2 py-1 rounded cursor-pointer group">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+                                        <span class="text-on-surface group-hover:text-primary">
+                                            Moda &amp; Calzado
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+                                        290
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between hover:bg-surface-container-low px-2 py-1 rounded cursor-pointer group">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded text-secondary accent-secondary cursor-pointer" type="checkbox"/>
+                                        <span class="text-on-surface group-hover:text-primary">
+                                            Electro &amp; Cocina
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">
+                                        95
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="h-[1px] bg-surface-container"></div>
+                        <!-- Price Range Filter (GTQ) -->
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="font-label-md text-label-md font-semibold text-on-surface">
+                                    Rango de Precio (GTQ)
+                                </span>
+                                <span class="text-caption font-caption text-secondary font-bold" id="current-range-val">
+                                    Q.50 - Q.15,000
+                                </span>
+                            </div>
+                            <div class="px-1">
+                                <input class="w-full h-1.5 bg-surface-container rounded-lg appearance-none cursor-pointer accent-secondary" id="price-slider" max="15000" min="50" step="100" type="range" value="8500"/>
+                                <div class="flex justify-between text-caption font-caption text-on-surface-variant mt-1">
+                                    <span>
+                                        Q. 50
+                                    </span>
+                                    <span>
+                                        Q. 15,000
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 pt-1">
+                                <div class="relative">
+                                    <span class="absolute left-2.5 top-2 text-caption font-caption text-on-surface-variant font-bold">
+                                        Mín
+                                    </span>
+                                    <input class="w-full bg-surface-container-low text-on-surface rounded-lg pl-9 pr-2 py-1.5 text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest" type="number" value="50"/>
+                                </div>
+                                <div class="relative">
+                                    <span class="absolute left-2.5 top-2 text-caption font-caption text-on-surface-variant font-bold">
+                                        Máx
+                                    </span>
+                                    <input class="w-full bg-surface-container-low text-on-surface rounded-lg pl-10 pr-2 py-1.5 text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest" type="number" value="8500"/>
+                                </div>
+                            </div>
+                            <button class="w-full bg-surface-container-high hover:bg-surface-container text-on-surface font-label-sm text-label-sm py-2 rounded-lg transition-colors font-medium">
+                                Aplicar Rango
+                            </button>
+                        </div>
+                        <div class="h-[1px] bg-surface-container"></div>
+                        <!-- Minimum Rating -->
+                        <div class="space-y-2">
+                            <span class="font-label-md text-label-md font-semibold text-on-surface block">
+                                Calificación Mínima
+                            </span>
+                            <div class="space-y-1.5 text-body-sm font-body-sm">
+                                <label class="flex items-center gap-2 cursor-pointer hover:bg-surface-container-low px-2 py-1 rounded">
+                                    <input checked="" class="accent-secondary cursor-pointer" name="rating" type="radio"/>
+                                    <div class="flex items-center text-amber-500">
+                                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md text-outline-variant">
+                                            star
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface font-medium">
+                                        4 estrellas o más
+                                    </span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer hover:bg-surface-container-low px-2 py-1 rounded">
+                                    <input class="accent-secondary cursor-pointer" name="rating" type="radio"/>
+                                    <div class="flex items-center text-amber-500">
+                                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md text-outline-variant">
+                                            star
+                                        </span>
+                                        <span class="material-symbols-outlined text-label-md text-outline-variant">
+                                            star
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface font-medium">
+                                        3 estrellas o más
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="h-[1px] bg-surface-container"></div>
+                        <!-- Availability & Promos -->
+                        <div class="space-y-2">
+                            <span class="font-label-md text-label-md font-semibold text-on-surface block">
+                                Disponibilidad &amp; Envíos
+                            </span>
+                            <div class="space-y-1.5 text-body-sm font-body-sm">
+                                <label class="flex items-center gap-2 cursor-pointer hover:bg-surface-container-low px-2 py-1 rounded group">
+                                    <input checked="" class="w-4 h-4 rounded accent-secondary cursor-pointer" type="checkbox"/>
+                                    <span class="material-symbols-outlined text-secondary text-label-md">
+                                        bolt
+                                    </span>
+                                    <span class="text-on-surface text-label-sm font-label-sm">
+                                        Entrega hoy en CDGT
+                                    </span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer hover:bg-surface-container-low px-2 py-1 rounded group">
+                                    <input checked="" class="w-4 h-4 rounded accent-secondary cursor-pointer" type="checkbox"/>
+                                    <span class="material-symbols-outlined text-secondary text-label-md">
+                                        local_shipping
+                                    </span>
+                                    <span class="text-on-surface text-label-sm font-label-sm">
+                                        Envío Gratis
+                                    </span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer hover:bg-surface-container-low px-2 py-1 rounded group">
+                                    <input class="w-4 h-4 rounded accent-secondary cursor-pointer" type="checkbox"/>
+                                    <span class="material-symbols-outlined text-error text-label-md">
+                                        percent
+                                    </span>
+                                    <span class="text-on-surface text-label-sm font-label-sm">
+                                        Descuentos &gt; 30%
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="h-[1px] bg-surface-container"></div>
+                        <!-- Brands -->
+                        <div class="space-y-2">
+                            <span class="font-label-md text-label-md font-semibold text-on-surface block">
+                                Marcas Oficiales
+                            </span>
+                            <div class="space-y-1 max-h-44 overflow-y-auto pr-1">
+                                <label class="flex items-center justify-between px-2 py-1 hover:bg-surface-container-low rounded cursor-pointer">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+                                        <span class="text-body-sm font-body-sm text-on-surface">
+                                            Apple
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant">
+                                        92
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between px-2 py-1 hover:bg-surface-container-low rounded cursor-pointer">
+                                    <div class="flex items-center gap-2">
+                                        <input checked="" class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+                                        <span class="text-body-sm font-body-sm text-on-surface font-semibold">
+                                            Samsung
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant">
+                                        114
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between px-2 py-1 hover:bg-surface-container-low rounded cursor-pointer">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+                                        <span class="text-body-sm font-body-sm text-on-surface">
+                                            Xiaomi
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant">
+                                        68
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between px-2 py-1 hover:bg-surface-container-low rounded cursor-pointer">
+                                    <div class="flex items-center gap-2">
+                                        <input checked="" class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+                                        <span class="text-body-sm font-body-sm text-on-surface font-semibold">
+                                            Sony
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant">
+                                        45
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between px-2 py-1 hover:bg-surface-container-low rounded cursor-pointer">
+                                    <div class="flex items-center gap-2">
+                                        <input checked="" class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+                                        <span class="text-body-sm font-body-sm text-on-surface font-semibold">
+                                            ASUS
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant">
+                                        38
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between px-2 py-1 hover:bg-surface-container-low rounded cursor-pointer">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+                                        <span class="text-body-sm font-body-sm text-on-surface">
+                                            LG Electronics
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant">
+                                        52
+                                    </span>
+                                </label>
+                                <label class="flex items-center justify-between px-2 py-1 hover:bg-surface-container-low rounded cursor-pointer">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-4 h-4 rounded accent-secondary" type="checkbox"/>
+                                        <span class="text-body-sm font-body-sm text-on-surface">
+                                            Ninja Kitchen
+                                        </span>
+                                    </div>
+                                    <span class="text-caption font-caption text-on-surface-variant">
+                                        24
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- RIGHT CONTENT AREA -->
+                    <div class="flex-1 flex flex-col w-full min-w-0">
+                        <!-- Controls Top Bar -->
+                        <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-md flex flex-col gap-space-sm">
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+                                <!-- Active Items Count & View Modes -->
+                                <div class="flex items-center gap-space-md">
+                                    <div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+                                        <button aria-label="Vista Cuadrícula" class="p-1.5 rounded bg-surface-container-lowest text-primary shadow-xs transition-colors" id="view-grid-btn">
+                                            <span class="material-symbols-outlined text-headline-sm">
+                                                grid_view
+                                            </span>
+                                        </button>
+                                        <button aria-label="Vista Lista" class="p-1.5 rounded text-on-surface-variant hover:text-primary transition-colors" id="view-list-btn">
+                                            <span class="material-symbols-outlined text-headline-sm">
+                                                view_list
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <span class="text-body-sm font-body-sm text-on-surface-variant">
+                                        Mostrando
+                                        <strong class="text-on-surface font-semibold">
+                                            1-16
+                                        </strong>
+                                        de 1,248 resultados
+                                    </span>
+                                </div>
+                                <!-- Sorting Dropdown -->
+                                <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+                                    <label class="text-label-sm font-label-sm text-on-surface-variant whitespace-nowrap" for="catalog-sort">
+                                        Ordenar por:
+                                    </label>
+                                    <div class="relative w-full sm:w-56">
+                                        <select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container-high transition-colors" id="catalog-sort">
+                                            <option value="pop">
+                                                Más populares
+                                            </option>
+                                            <option value="price_asc">
+                                                Precio: menor a mayor
+                                            </option>
+                                            <option value="price_desc">
+                                                Precio: mayor a menor
+                                            </option>
+                                            <option value="rating">
+                                                Mejor valorados
+                                            </option>
+                                            <option value="new">
+                                                Novedades recién llegadas
+                                            </option>
+                                        </select>
+                                        <span class="material-symbols-outlined text-label-md text-on-surface-variant absolute right-2.5 top-2.5 pointer-events-none">
+                                            expand_more
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filter Chips Bar -->
+                            <div class="flex items-center gap-2 flex-wrap pt-1">
+                                <span class="text-caption font-caption text-on-surface-variant uppercase font-bold tracking-wider">
+                                    Filtros:
+                                </span>
+                                <div class="inline-flex items-center gap-1 bg-surface-container text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full">
+                                    <span>
+                                        Tecnología
+                                    </span>
+                                    <button aria-label="Remover Tecnología" class="material-symbols-outlined text-caption hover:text-error transition-colors">
+                                        close
+                                    </button>
+                                </div>
+                                <div class="inline-flex items-center gap-1 bg-surface-container text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full">
+                                    <span>
+                                        En Stock
+                                    </span>
+                                    <button aria-label="Remover En Stock" class="material-symbols-outlined text-caption hover:text-error transition-colors">
+                                        close
+                                    </button>
+                                </div>
+                                <div class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm px-2.5 py-1 rounded-full font-medium">
+                                    <span class="material-symbols-outlined text-caption" style="font-variation-settings: 'FILL' 1;">
+                                        local_shipping
+                                    </span>
+                                    <span>
+                                        Envío Gratis
+                                    </span>
+                                    <button aria-label="Remover Envío Gratis" class="material-symbols-outlined text-caption hover:text-error transition-colors">
+                                        close
+                                    </button>
+                                </div>
+                                <div class="inline-flex items-center gap-1 bg-surface-container text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full">
+                                    <span>
+                                        Sony, ASUS, Samsung
+                                    </span>
+                                    <button aria-label="Remover Marcas" class="material-symbols-outlined text-caption hover:text-error transition-colors">
+                                        close
+                                    </button>
+                                </div>
+                                <button class="text-caption font-caption text-error hover:underline font-semibold ml-auto transition-all">
+                                    Limpiar filtros
+                                </button>
+                            </div>
+                        </div>
+                        <!-- PRODUCT MATRIX GRID (4 Columns on large screen) -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-gutter-desktop" id="product-grid">
+                            <!-- Card 1: LG Smart TV -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="LG 55 inch 4K Ultra HD Smart television display showing vibrant colors and thin dark bezels, set against an elegant minimalist living space backdrop with soft studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCK9jEvPc4H5H3tZfxcA8kus0OT5L7XIxqzmiZiYj39Yy6x4ZDO2CAib1G9d65CeB9FWcHsGpQc3UHkQX1W8hAX37Lxn0ltCZtW4ELy5yXP5F20kVblGhP7HSI8Ox4ka9Nc12n3lzefv_UHzlliC0ZTgjHZZw0C4mMfrf1VOmHWPfBmynkaR3ZQ2YDZjaQ5uCE80ubOSX9sLtJ7MU6SrHEqJ07-lz7_urN4GrDkGdE_lvvO15Ca0Le7g"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-error text-on-error font-caption text-caption px-2 py-0.5 rounded font-bold shadow-xs">
+                                            -13% OFF
+                                        </span>
+                                        <span class="bg-secondary-container text-on-secondary-container font-caption text-caption px-1.5 py-0.5 rounded font-semibold flex items-center gap-0.5">
+                                            <span class="material-symbols-outlined text-[12px]">
+                                                bolt
+                                            </span>
+                                            Express
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <!-- Quick View Overlay trigger on hover -->
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            LG Electronics
+                                        </span>
+                                        <span class="bg-surface-container text-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            En Stock
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Smart TV LG 55" 4K UHD ThinQ AI HDR10 Pro
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star_half
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (48 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 3,899.00
+                                            </span>
+                                            <span class="text-caption font-caption text-on-surface-variant line-through">
+                                                Q. 4,500.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 18 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 216.61
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card 2: ASUS ZenBook 14 OLED -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Sleek ultra-thin ASUS ZenBook 14 inch OLED laptop in deep royal blue finish open at 100 degrees showcasing crisp display against clean white tech studio setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8vRG4uEjkA-j05JzhXUWszjzZs3VsCqFnPq4rBFdPsNcJYQdSb_l5FwQRqLCqSKQlDEqzuIRBanZm84PlVN9-UPhysdEZJaUxcF6hXbniHxKB4QQAuSnn6HZd30cYe-7eJPuefdkJny_XDALhBefAh8gcZutN60-V9j4EsPv7iGrDQq8jVl66JfcsK796yQKs2pA_tCb6fe3hsKR_7kXCbSP8mpB4JiAUJSfkos6IY31iTNxvB7c--g"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-secondary text-on-secondary font-caption text-caption px-2 py-0.5 rounded font-bold shadow-xs">
+                                            NUEVO
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            ASUS
+                                        </span>
+                                        <span class="bg-error-container text-on-error-container text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            Últimas 3 unid.
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Laptop ASUS ZenBook 14" OLED Intel Core Ultra 7 16GB
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (29 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 6,850.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 18 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 380.55
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card 3: De'Longhi Espresso -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="DeLonghi Italian espresso coffee maker machine made of polished stainless steel and matte black details, steam wand visible, kitchen countertop setting with morning ambient glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClsA4cpn2Wy1l52Oey1iXujMZiaGo20U87Ig5yMhkeEhF28pghNb8_hiaD-MuOsi_vfKYnE-6hj57GWN98EJjpeDDM-FclIA6DjImhlJTrQwauNt2cVEiXuAn-7I_MwRxNurQKZTanMO13DOn-Ds_x4haOrTgBa7FTSkOcMaoEjNta6_Snr2BueUFXZ3zb5yL--5Z3lt1v5gTsAtPQFdVNzChDu6pnc_AQuqjwusjYzwgq4kGUyww93g"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-secondary-container text-on-secondary-container font-caption text-caption px-1.5 py-0.5 rounded font-semibold flex items-center gap-0.5">
+                                            <span class="material-symbols-outlined text-[12px]">
+                                                local_shipping
+                                            </span>
+                                            Gratis
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            De'Longhi
+                                        </span>
+                                        <span class="bg-surface-container text-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            En Stock
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Cafetera Espresso Automática De'Longhi Dedica 15 Bar
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star_half
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (84 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 1,290.00
+                                            </span>
+                                            <span class="text-caption font-caption text-on-surface-variant line-through">
+                                                Q. 1,450.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 12 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 107.50
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card 4: Sony WH-1000XM5 -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Matte silver Sony WH-1000XM5 wireless over-ear noise cancelling headphones displayed on modern wooden headphone stand with soft ambient studio illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe396RSJOXE21voZEgZJ6LO_2FOXI5MNdylwbCnxjHJY9XZ3ARvZKob6B5JT6HyoQ-HyRyy18p0owN91AoeucbYeuWvSaBLNIhHeGMR0QzUo7zNWhvuCuK1yRLLPlJrL2pdaSjSAv1doM84gpbJ7Tth8_VKSC8ME-N7fWQGdBerkgRrH5kEVRJdJZQgWK-1rpu6d0gk3aNl0uuyibcE2eAzazzbYk0gMQXnnOTLOIRt5--h1lbrmcBEw"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-secondary text-on-secondary font-caption text-caption px-2 py-0.5 rounded font-bold shadow-xs">
+                                            TOP VENTAS
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            Sony
+                                        </span>
+                                        <span class="bg-surface-container text-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            En Stock
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Audífonos Sony WH-1000XM5 Noise Cancelling Bluetooth
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (112 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 2,350.00
+                                            </span>
+                                            <span class="text-caption font-caption text-on-surface-variant line-through">
+                                                Q. 2,690.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 12 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 195.83
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card 5: Nike Pegasus -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Pair of Nike Air Zoom Pegasus running shoes in emerald green and crisp white colorway, side profile product photograph with subtle shadow on light background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5VE8LaPBhshunNEWrDkU8RryfgzpiwTZ4tds5tk6bXKASkt957TEZjlSgE6o4vAPgPZTripanEB7XfTLib65rHN7w6cwEverkKyTMddW7jSA8jVrEKq8-gwDeHl9nByTVqiU6q-ofeHFNwYgjmdvNwrnHAQkFBQrHDO7xGZoTV-hUOdvK6TL6hDsUYi7QqItNJlZNk_QhbCAcgNs1Mx8UwiNPRqKg3mDk3OJSe_WciMTolbs9UZB1pA"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-surface-container text-on-surface font-caption text-caption px-1.5 py-0.5 rounded font-bold">
+                                            Tallas 38-44
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            Nike Running
+                                        </span>
+                                        <span class="bg-surface-container text-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            En Stock
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Tenis Running Nike Air Zoom Pegasus 40 Hombre
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm text-outline-variant">
+                                                star
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (56 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 980.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 6 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 163.33
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card 6: Ninja Air Fryer -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Ninja digital air fryer 5.5L appliance in sleek matte dark grey finish with LED digital control display panel illuminated on a white kitchen island." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjt2r54PkElbIDv0XNaNjodczAAkC1_2TsulZt8Diu36pysqQHodpIX5acYUkRn3debvXW0gKJawTU2hYg_35J7QyPfHJEp9HzrUBzBJrOvQTPG5W2UerisDLE8qht8zNFZRC_cN0cPcrrhIjjSPAz0xYJTQm_uroR93PN31EWQCGqnPcl_Naz7MJnpmzgP8jlbmsl1EHW8gkP5K4zWDGDRhN7J3Su-5Ew4x9aJPmrif7s5yFohlv5sg"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-error text-on-error font-caption text-caption px-2 py-0.5 rounded font-bold shadow-xs">
+                                            -18%
+                                        </span>
+                                        <span class="bg-secondary-container text-on-secondary-container font-caption text-caption px-1.5 py-0.5 rounded font-semibold flex items-center gap-0.5">
+                                            <span class="material-symbols-outlined text-[12px]">
+                                                bolt
+                                            </span>
+                                            Express
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            Ninja Kitchen
+                                        </span>
+                                        <span class="bg-surface-container text-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            En Stock
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Freidora de Aire Digital Ninja 5.5 Litros Max XL
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (210 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 1,150.00
+                                            </span>
+                                            <span class="text-caption font-caption text-on-surface-variant line-through">
+                                                Q. 1,400.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 12 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 95.83
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card 7: Galaxy Watch 6 -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="Samsung Galaxy Watch 6 smartwatch 44mm in graphite black with luminous circular AMOLED display on minimalist stone pedestals with clean commercial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXjXrpsdB0qVsL1ImwYoInjN3KnEyTrd6eXTs9XBRW0GeuT7Z-rSCbGN63ofyGbCMk9PnL1vN9wytxX7yCMkOwqpOS29jnH4-hgvG4fKmVit8iPvCiw1FgcgMZmJglm4r7bC5mWySQam87CncwLeKzus1q8sMlhfUU3VwYzN4g7LMLc9tzNL1ngRL37EIX34a-NAB3KZ7_okqsUREwGD80Esn1kb6WiGlG_pEhdmHKczwNh53JAOfUFQ"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-secondary-container text-on-secondary-container font-caption text-caption px-1.5 py-0.5 rounded font-semibold flex items-center gap-0.5">
+                                            <span class="material-symbols-outlined text-[12px]">
+                                                local_shipping
+                                            </span>
+                                            Gratis
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            Samsung
+                                        </span>
+                                        <span class="bg-surface-container text-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            En Stock
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Reloj Smartwatch Samsung Galaxy Watch 6 44mm BT
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star_half
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (73 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 1,690.00
+                                            </span>
+                                            <span class="text-caption font-caption text-on-surface-variant line-through">
+                                                Q. 1,899.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 12 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 140.83
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Card 8: Ergonomic Office Chair -->
+                            <div class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                                <div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-space-sm flex items-center justify-center">
+                                    <img class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" data-alt="High-end ergonomic black mesh office task chair with 3D lumbar support and headrest in modern architect studio with concrete flooring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5r0Gz6LBkHbyCg8xlt2bCK0NQQoXzcXdVs7qnlLwDuEfmN5X4tOKqJYBN6nR7GR6nZHvHBLjdiHa_GXn_Jc4GU1ptywjyw9bren5EhaTp4qqSbBQh42wcuwHnpx_rvqgJU2643-35av0TEm-yhDAMh9VT93I-00hWFhzPe-Am9phdiSgwUPhTGU3mWH0S9hu_2irOCtC3RmPtmfkOFt3q9D5VTTOOPdwxmrbcqug-4xpT3Mny8mNIFA"/>
+                                    <div class="absolute top-2 left-2 flex flex-col gap-1">
+                                        <span class="bg-primary-container text-on-primary font-caption text-caption px-2 py-0.5 rounded font-bold shadow-xs">
+                                            ERGONOMIC
+                                        </span>
+                                    </div>
+                                    <button aria-label="Agregar a favoritos" class="absolute top-2 right-2 w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error flex items-center justify-center shadow-xs transition-colors">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            favorite
+                                        </span>
+                                    </button>
+                                    <div class="absolute inset-x-2 bottom-2 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                        <button class="w-full bg-primary-container text-on-primary text-label-sm font-label-sm py-2 rounded-lg shadow-md flex items-center justify-center gap-1.5 hover:bg-primary transition-colors">
+                                            <span class="material-symbols-outlined text-label-md">
+                                                visibility
+                                            </span>
+                                            <span>
+                                                Vista Rápida
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-1">
+                                    <div class="flex items-center justify-between gap-1 mb-1">
+                                        <span class="text-caption font-caption text-on-surface-variant uppercase tracking-wider font-semibold">
+                                            ProErgo GT
+                                        </span>
+                                        <span class="bg-error-container text-on-error-container text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                                            Últimas 2 unid.
+                                        </span>
+                                    </div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold line-clamp-2 mb-1.5 group-hover:text-secondary transition-colors leading-tight">
+                                        Silla Ergonómica Ejecutiva de Oficina Mesh Transpirable
+                                    </h3>
+                                    <div class="flex items-center gap-1 mb-2">
+                                        <div class="flex text-amber-500">
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                            <span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">
+                                                star
+                                            </span>
+                                        </div>
+                                        <span class="text-caption font-caption text-on-surface-variant font-medium">
+                                            (34 reseñas)
+                                        </span>
+                                    </div>
+                                    <div class="mt-auto pt-2">
+                                        <div class="flex items-baseline gap-2">
+                                            <span class="font-price-md text-price-md text-on-surface font-bold text-primary">
+                                                Q. 1,420.00
+                                            </span>
+                                        </div>
+                                        <p class="text-caption font-caption text-secondary font-medium mt-0.5">
+                                            Hasta 12 Visacuotas de
+                                            <strong class="text-on-surface">
+                                                Q. 118.33
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-2">
+                                    <button class="w-full bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 font-semibold">
+                                        <span class="material-symbols-outlined text-headline-sm">
+                                            shopping_cart
+                                        </span>
+                                        <span>
+                                            Agregar al Carrito
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PAGINATION BAR -->
+                        <div class="mt-space-xl bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+                            <div class="text-body-sm font-body-sm text-on-surface-variant">
+                                Página
+                                <strong class="text-on-surface">
+                                    1
+                                </strong>
+                                de 12 (16 productos por página)
+                            </div>
+                            <div class="flex items-center gap-1.5">
+                                <!-- Prev button disabled -->
+                                <button class="w-9 h-9 rounded-lg bg-surface-container-low text-on-surface-variant opacity-40 cursor-not-allowed flex items-center justify-center" disabled="">
+                                    <span class="material-symbols-outlined text-label-md">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <button class="w-9 h-9 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-xs">
+                                    1
+                                </button>
+                                <button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+                                    2
+                                </button>
+                                <button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+                                    3
+                                </button>
+                                <span class="px-1 text-on-surface-variant font-bold">
+                                    ...
+                                </span>
+                                <button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+                                    12
+                                </button>
+                                <!-- Next button active -->
+                                <button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors">
+                                    <span class="material-symbols-outlined text-label-md">
+                                        arrow_forward
+                                    </span>
+                                </button>
+                            </div>
+                            <!-- Fast Jump -->
+                            <div class="hidden md:flex items-center gap-2">
+                                <span class="text-caption font-caption text-on-surface-variant">
+                                    Ir a:
+                                </span>
+                                <input class="w-14 bg-surface-container-low text-center text-on-surface rounded-lg py-1 text-label-sm font-label-sm focus:outline-none" max="12" min="1" type="number" value="1"/>
+                                <button class="bg-surface-container-high hover:bg-surface-container text-on-surface px-2.5 py-1 rounded-lg text-label-sm font-label-sm font-medium transition-colors">
+                                    Ir
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Trust Badge Strip for Guatemalan Shoppers -->
+                        <div class="mt-space-md grid grid-cols-1 sm:grid-cols-3 gap-gutter-desktop p-space-md bg-surface-container-low rounded-xl">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-headline-sm">
+                                        verified_user
+                                    </span>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-sm text-label-md text-on-surface font-semibold">
+                                        Garantía Local en GT
+                                    </h4>
+                                    <p class="text-caption font-caption text-on-surface-variant">
+                                        Respaldo directo con centros autorizados de cada marca.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-headline-sm">
+                                        credit_score
+                                    </span>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-sm text-label-md text-on-surface font-semibold">
+                                        Visacuotas Seguras
+                                    </h4>
+                                    <p class="text-caption font-caption text-on-surface-variant">
+                                        Hasta 18 cuotas sin recargo en bancos participantes de Guatemala.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-headline-sm">
+                                        pin_drop
+                                    </span>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-sm text-label-md text-on-surface font-semibold">
+                                        Cobertura Nacional
+                                    </h4>
+                                    <p class="text-caption font-caption text-on-surface-variant">
+                                        Guatex y Forza para todos los 22 departamentos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive Script for View Toggle and Price Slider -->
+                <script>
+                    (function() {
+                      // Toggle Grid vs List
+                      const gridBtn = document.getElementById('view-grid-btn');
+                      const listBtn = document.getElementById('view-list-btn');
+                      const productGrid = document.getElementById('product-grid');
+
+                      if (gridBtn && listBtn && productGrid) {
+                        listBtn.addEventListener('click', function() {
+                          productGrid.className = "flex flex-col gap-4";
+                          listBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+                          listBtn.classList.remove('text-on-surface-variant');
+                          gridBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+                          gridBtn.classList.add('text-on-surface-variant');
+                        });
+
+                        gridBtn.addEventListener('click', function() {
+                          productGrid.className = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-gutter-desktop";
+                          gridBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+                          gridBtn.classList.remove('text-on-surface-variant');
+                          listBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+                          listBtn.classList.add('text-on-surface-variant');
+                        });
+                      }
+
+                      // Slider Dynamic Feedback
+                      const priceSlider = document.getElementById('price-slider');
+                      const rangeVal = document.getElementById('current-range-val');
+                      if (priceSlider && rangeVal) {
+                        priceSlider.addEventListener('input', function(e) {
+                          const val = Number(e.target.value).toLocaleString();
+                          rangeVal.textContent = 'Q.50 - Q.' + val;
+                        });
+                      }
+
+                      // Favorite toggle
+                      document.querySelectorAll('.group button[aria-label="Agregar a favoritos"]').forEach(btn => {
+                        btn.addEventListener('click', function(e) {
+                          e.stopPropagation();
+                          const icon = this.querySelector('.material-symbols-outlined');
+                          if (icon.textContent === 'favorite') {
+                            icon.textContent = 'favorite';
+                            icon.style.fontVariationSettings = "'FILL' 1";
+                            this.classList.add('text-error');
+                          } else {
+                            icon.style.fontVariationSettings = "'FILL' 0";
+                            this.classList.remove('text-error');
+                          }
+                        });
+                      });
+                    })();
+                </script>
+            </div>
+        </main>
+        <footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+            <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+                <div class="flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-xs mb-1">
+                        <span class="font-headline-md text-headline-md text-primary font-bold">
+                            MercadoGo
+                        </span>
+                        <span class="bg-secondary text-on-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                            GT
+                        </span>
+                    </div>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        La tienda departamental en línea líder en Guatemala, con entrega rápida, garantía certificada y facilidades de pago en Visacuotas.
+                    </p>
+                    <div class="flex flex-col gap-1.5 mt-2 text-label-sm font-label-sm text-on-surface-variant">
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Tiendas Físicas en Guatemala
+                        </a>
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Sostenibilidad y Comunidad
+                        </a>
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Bolsa de Empleo
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Servicio al Cliente
+                    </h3>
+                    <ul class="flex flex-col gap-2 text-label-sm font-label-sm text-on-surface-variant">
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    local_shipping
+                                </span>
+                                Rastreo de Pedidos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    sync
+                                </span>
+                                Políticas de Devolución (30 días)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    verified
+                                </span>
+                                Garantía Oficial de Fabrica
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    help
+                                </span>
+                                Preguntas Frecuentes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Métodos de Pago Seguros
+                    </h3>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        Transacciones 100% cifradas y protegidas con certificado de seguridad SSL.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2 text-caption font-caption text-on-surface">
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                credit_card
+                            </span>
+                            <span>
+                                Visacuotas Hasta 18x
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                payments
+                            </span>
+                            <span>
+                                Pago Contra Entrega
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                point_of_sale
+                            </span>
+                            <span>
+                                POS Móvil a Domicilio
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                shield_with_heart
+                            </span>
+                            <span>
+                                Visa / Mastercard
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Suscríbete y Ahorra
+                    </h3>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        Obtén un cupón de
+                        <strong>
+                            Q.50 de descuento
+                        </strong>
+                        en tu primera orden al registrarte a nuestro boletín semanal.
+                    </p>
+                    <form class="flex flex-col gap-2" onsubmit="event.preventDefault();">
+                        <div class="relative w-full">
+                            <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:bg-surface-container-lowest" placeholder="tucorreo@ejemplo.gt" type="email"/>
+                        </div>
+                        <button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-4 py-2 rounded-lg font-label-md text-label-md font-semibold transition-colors" type="submit">
+                            Quiero mi Cupón
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="bg-surface-container-low py-4">
+                <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop text-center text-on-surface-variant text-label-sm font-label-sm">
+                    © 2025 MercadoGo Guatemala S.A. Todos los derechos reservados. Precios expresados en Quetzales (GTQ) incluyen IVA.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

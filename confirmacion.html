@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'error': '#ba1a1a', 'surface-container-highest': '#d3e4fe', 'on-surface': '#0b1c30', 'primary': '#000000', 'primary-fixed': '#dae2fd', 'on-primary-fixed-variant': '#3f465c', 'outline': '#76777d', 'on-error-container': '#93000a', 'inverse-primary': '#bec6e0', 'inverse-on-surface': '#eaf1ff', 'on-secondary-container': '#00714d', 'on-error': '#ffffff', 'tertiary': '#000000', 'surface-dim': '#cbdbf5', 'on-tertiary-fixed-variant': '#264191', 'on-secondary-fixed-variant': '#005236', 'surface-container-low': '#eff4ff', 'on-secondary': '#ffffff', 'primary-fixed-dim': '#bec6e0', 'secondary-container': '#6cf8bb', 'on-surface-variant': '#45464d', 'secondary-fixed-dim': '#4edea3', 'primary-container': '#131b2e', 'tertiary-fixed': '#dce1ff', 'surface-container-high': '#dce9ff', 'on-background': '#0b1c30', 'on-primary-fixed': '#131b2e', 'tertiary-container': '#00164e', 'secondary': '#006c49', 'on-secondary-fixed': '#002113', 'tertiary-fixed-dim': '#b6c4ff', 'on-primary-container': '#7c839b', 'surface-container': '#e5eeff', 'surface-variant': '#d3e4fe', 'on-tertiary-container': '#6780d3', 'surface-container-lowest': '#ffffff', 'surface-tint': '#565e74', 'background': '#f8f9ff', 'surface': '#f8f9ff', 'surface-bright': '#f8f9ff', 'secondary-fixed': '#6ffbbe', 'error-container': '#ffdad6', 'on-tertiary-fixed': '#00164e', 'on-primary': '#ffffff', 'inverse-surface': '#213145', 'on-tertiary': '#ffffff', 'outline-variant': '#c6c6cd' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'space-lg': '1.5rem', 'margin': '1rem', 'margin-tablet': '2rem', 'gutter': '1rem', 'space-xs': '0.25rem', 'space-xl': '2rem', 'space-sm': '0.5rem', 'space-md': '1rem', 'margin-desktop': '2.5rem', 'gutter-desktop': '1.5rem' }, 'fontFamily': { 'headline-xl': ['Outfit'], 'caption': ['Inter'], 'price-md': ['Outfit'], 'body-md': ['Inter'], 'label-md': ['Inter'], 'headline-sm': ['Outfit'], 'headline-md': ['Outfit'], 'display-lg-mobile': ['Outfit'], 'headline-lg': ['Outfit'], 'price-lg': ['Outfit'], 'body-sm': ['Inter'], 'headline-xl-mobile': ['Outfit'], 'display-lg': ['Outfit'], 'label-sm': ['Inter'], 'body-lg': ['Inter'] }, 'fontSize': { 'headline-xl': ['36px', { 'lineHeight': '44px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'caption': ['11px', { 'lineHeight': '14px', 'letterSpacing': '0.03em', 'fontWeight': '500' }], 'price-md': ['20px', { 'lineHeight': '24px', 'fontWeight': '700' }], 'body-md': ['16px', { 'lineHeight': '24px', 'fontWeight': '400' }], 'label-md': ['14px', { 'lineHeight': '20px', 'fontWeight': '500' }], 'headline-sm': ['16px', { 'lineHeight': '24px', 'fontWeight': '600' }], 'headline-md': ['20px', { 'lineHeight': '28px', 'fontWeight': '600' }], 'display-lg-mobile': ['32px', { 'lineHeight': '40px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'headline-lg': ['24px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '600' }], 'price-lg': ['28px', { 'lineHeight': '32px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'body-sm': ['14px', { 'lineHeight': '20px', 'fontWeight': '400' }], 'headline-xl-mobile': ['28px', { 'lineHeight': '36px', 'letterSpacing': '-0.01em', 'fontWeight': '700' }], 'display-lg': ['48px', { 'lineHeight': '56px', 'letterSpacing': '-0.02em', 'fontWeight': '700' }], 'label-sm': ['12px', { 'lineHeight': '16px', 'letterSpacing': '0.02em', 'fontWeight': '600' }], 'body-lg': ['18px', { 'lineHeight': '28px', 'fontWeight': '400' }] } } } };</script>
+    </head>
+    <body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
+        <header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+            <div class="bg-primary-container text-on-primary text-center py-2 px-margin text-label-sm font-label-sm flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-label-md text-secondary-fixed">
+                    local_shipping
+                </span>
+                <span>
+                    Envío GRATIS a toda Guatemala en compras mayores a Q.350 | Entregas express en 24h a Ciudad de Guatemala
+                </span>
+            </div>
+            <div class="h-20 max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter-desktop">
+                <div class="flex items-center gap-space-md">
+                    <img alt="MercadoGo Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WXakRMm9XimHwF6e65ZkcLN0fc-LZZvwHOORzsUljDCFUZ1wbMB4X-_lhWhTmjj9fSZil6N2qPpZQOQg9ZjGrJid002N6SujVuWi46DfbVTgVf15V9TQnTa3YQwdZzmLBy4lo4YvV14S2D3xPWdKXcXrhboKZabPe9oTvoJm88oxsg_sE6cIJohuzp2K1bWNqJ2lKUkPWDxh4n_rU3sH6hB2wVbq_CbcU4AuyKkHVd9Ucf1H8qEfaB1cxN"/>
+                    <span class="font-headline-lg text-headline-lg text-primary hidden sm:inline-block tracking-tight">
+                        MercadoGo
+                    </span>
+                </div>
+                <div class="hidden lg:flex items-center">
+                    <button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container px-space-md py-2 rounded-lg text-on-surface font-label-md text-label-md transition-colors" type="button">
+                        <span class="material-symbols-outlined text-label-md">
+                            category
+                        </span>
+                        <span>
+                            Todas las Categorías
+                        </span>
+                        <span class="material-symbols-outlined text-label-sm">
+                            expand_more
+                        </span>
+                    </button>
+                </div>
+                <div class="flex-1 max-w-2xl mx-space-sm">
+                    <div class="relative flex items-center w-full">
+                        <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-4 pr-12 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_3px_0_rgba(15,23,42,0.05)] transition-all" placeholder="Buscar en más de 20,000 productos: tecnología, hogar, moda..." type="search"/>
+                        <button aria-label="Buscar" class="absolute right-1 bg-secondary text-on-secondary hover:bg-on-secondary-container p-2 rounded-lg flex items-center justify-center transition-colors" type="button">
+                            <span class="material-symbols-outlined text-label-md">
+                                search
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center gap-space-md shrink-0">
+                    <div class="hidden xl:flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm cursor-pointer hover:text-on-surface transition-colors">
+                        <span class="material-symbols-outlined text-label-md text-secondary">
+                            location_on
+                        </span>
+                        <span>
+                            GTQ (Q.) · Guatemala
+                        </span>
+                    </div>
+                    <a class="hidden sm:flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" data-path="orders" href="#">
+                        <span class="material-symbols-outlined text-label-md">
+                            local_shipping
+                        </span>
+                        <span class="hidden md:inline">
+                            Mis Pedidos
+                        </span>
+                    </a>
+                    <div class="flex items-center gap-2 cursor-pointer">
+                        <img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8WYghp3r0GgD3LEjWTs6Dj0q11Px0EQfnUFgs35z4hCPaOxl2AaYH5Rb0QXc2urcbfHEWuGYff3OlIjKrO-IlOJweSD2FrpMIptmHGTtlZAxnCEktGTDLhJwkrHta6jFSdeedQtdLQRKFBCcPSQtDInskChTo9a-HYBi-GYXRLThXNvcNUAXmaQ8eU3rY1axJiZvfgBHlFqHjyoPWzOtt-cKHYkzi-nCXUzHAaUHihNPRt1wUA78DfA"/>
+                        <div class="hidden lg:flex flex-col text-left">
+                            <span class="text-caption font-caption text-on-surface-variant">
+                                Hola, Sofía
+                            </span>
+                            <span class="text-label-sm font-label-sm text-on-surface font-semibold">
+                                Mi Cuenta
+                            </span>
+                        </div>
+                    </div>
+                    <a class="flex items-center gap-2 bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed px-3 py-2 rounded-lg transition-colors" data-path="cart" href="#">
+                        <div class="relative flex items-center">
+                            <span class="material-symbols-outlined text-headline-sm">
+                                shopping_bag
+                            </span>
+                            <span class="absolute -top-2 -right-2 bg-secondary text-on-secondary font-label-sm text-caption rounded-full w-5 h-5 flex items-center justify-center font-bold">
+                                3
+                            </span>
+                        </div>
+                        <div class="hidden md:flex flex-col text-left leading-none">
+                            <span class="text-caption font-caption opacity-80">
+                                Total
+                            </span>
+                            <span class="font-headline-sm text-label-sm font-bold">
+                                Q. 1,450.00
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-surface-container-low">
+                <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between overflow-x-auto py-2.5 gap-gutter-desktop">
+                    <nav class="flex items-center gap-space-md shrink-0" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg">
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="flash-deals" href="#">
+                            Ofertas Flash
+                        </a>
+                        <a aria-current="page" class="px-2.5 py-1 transition-colors whitespace-nowrap bg-primary-container text-on-primary font-bold rounded-lg" data-path="tech-catalog" href="#">
+                            Tecnología
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="home-furniture" href="#">
+                            Hogar &amp; Muebles
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="fashion-footwear" href="#">
+                            Moda &amp; Calzado
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="health-beauty" href="#">
+                            Salud &amp; Belleza
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="groceries" href="#">
+                            Supermercado &amp; Despensa
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="sports" href="#">
+                            Deportes
+                        </a>
+                        <a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface px-2.5 py-1 transition-colors whitespace-nowrap" data-path="outlet-liquidation" href="#">
+                            Liquidación Outlet
+                        </a>
+                    </nav>
+                    <div class="hidden xl:flex items-center gap-1.5 text-on-surface font-label-sm text-label-sm shrink-0">
+                        <span class="material-symbols-outlined text-secondary text-label-md">
+                            support_agent
+                        </span>
+                        <span>
+                            Atención al Cliente:
+                            <strong class="text-primary">
+                                +502 2345-6789
+                            </strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="w-full pt-36 bg-surface flex-1 max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+            <div class="flex flex-col w-full pb-16">
+                <!-- Stepper de Progreso Superior -->
+                <div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-4 sm:p-6 mb-8">
+                    <div class="flex items-center justify-between max-w-3xl mx-auto relative">
+                        <div class="absolute left-6 right-6 top-1/2 -translate-y-1/2 h-1 bg-secondary rounded-full z-0"></div>
+                        <!-- Paso 1 -->
+                        <div class="relative z-10 flex flex-col items-center gap-1">
+                            <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold shadow-md ring-4 ring-surface-container-lowest">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    check
+                                </span>
+                            </div>
+                            <span class="font-label-sm text-label-sm text-on-surface font-semibold">
+                                1. Carrito
+                            </span>
+                        </div>
+                        <!-- Paso 2 -->
+                        <div class="relative z-10 flex flex-col items-center gap-1">
+                            <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold shadow-md ring-4 ring-surface-container-lowest">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    check
+                                </span>
+                            </div>
+                            <span class="font-label-sm text-label-sm text-on-surface font-semibold">
+                                2. Datos y Envío
+                            </span>
+                        </div>
+                        <!-- Paso 3 -->
+                        <div class="relative z-10 flex flex-col items-center gap-1">
+                            <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold shadow-md ring-4 ring-surface-container-lowest">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    check
+                                </span>
+                            </div>
+                            <span class="font-label-sm text-label-sm text-on-surface font-semibold">
+                                3. Pago Aprobado
+                            </span>
+                        </div>
+                        <!-- Paso 4 -->
+                        <div class="relative z-10 flex flex-col items-center gap-1">
+                            <div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold shadow-md ring-4 ring-surface-container-lowest">
+                                <span class="material-symbols-outlined text-headline-sm">
+                                    verified
+                                </span>
+                            </div>
+                            <span class="font-label-sm text-label-sm text-secondary font-bold">
+                                4. Confirmación
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero de Éxito / Banner de Felicitación -->
+                <div class="relative bg-surface-container-lowest rounded-2xl shadow-md p-8 sm:p-10 mb-8 overflow-hidden">
+                    <div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-container opacity-20 pointer-events-none"></div>
+                    <div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
+                        <div class="w-20 h-20 rounded-full bg-secondary-container flex items-center justify-center mb-5 animate-pulse text-on-secondary-container">
+                            <span class="material-symbols-outlined text-display-lg" style="font-variation-settings: 'FILL' 1;">
+                                check_circle
+                            </span>
+                        </div>
+                        <div class="inline-flex items-center gap-2 bg-surface-container-low px-4 py-1.5 rounded-full mb-3">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                verified_user
+                            </span>
+                            <span class="font-label-sm text-label-sm font-semibold text-secondary">
+                                Transacción Verificada y Segura
+                            </span>
+                        </div>
+                        <h1 class="font-display-lg text-display-lg text-on-surface mb-2 tracking-tight">
+                            ¡Gracias por tu compra, Sofía! Tu pedido está confirmado
+                        </h1>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                            Hemos enviado la confirmación y tu Factura Electrónica (FEL) a
+                            <span class="font-semibold text-on-surface">
+                                sofia.mendoza@email.com
+                            </span>
+                        </p>
+                        <!-- Badge Destacado de Orden -->
+                        <div class="w-full bg-surface-container-low rounded-xl p-4 sm:p-5 flex flex-wrap items-center justify-around gap-4 text-left shadow-sm">
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary text-headline-lg">
+                                    receipt_long
+                                </span>
+                                <div>
+                                    <div class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">
+                                        No. de Orden
+                                    </div>
+                                    <div class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                                        #MGO-8492041
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-8 w-px bg-outline-variant hidden sm:block"></div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary text-headline-lg">
+                                    calendar_today
+                                </span>
+                                <div>
+                                    <div class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">
+                                        Fecha
+                                    </div>
+                                    <div class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                                        Hoy, 24 Octubre 2025
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-8 w-px bg-outline-variant hidden sm:block"></div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-secondary text-headline-lg">
+                                    credit_card
+                                </span>
+                                <div>
+                                    <div class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">
+                                        Método de Pago
+                                    </div>
+                                    <div class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                                        Visacuotas (12x Q. 542.41)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Layout de 2 Columnas -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <!-- Columna Izquierda (60% ~ 7/12 desktop) -->
+                    <div class="lg:col-span-7 flex flex-col gap-6">
+                        <!-- Timeline Interactivo de Estado de Entrega -->
+                        <div class="bg-surface-container-lowest rounded-xl shadow-sm p-6">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-secondary text-headline-md">
+                                        local_shipping
+                                    </span>
+                                    <h2 class="font-headline-md text-headline-md font-bold text-on-surface">
+                                        Seguimiento del Envío
+                                    </h2>
+                                </div>
+                                <span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-3 py-1 rounded-full font-bold flex items-center gap-1">
+                                    <span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>
+                                    En Progreso
+                                </span>
+                            </div>
+                            <!-- Lista Timeline -->
+                            <div class="relative pl-6 flex flex-col gap-8">
+                                <div class="absolute left-2.5 top-3 bottom-3 w-0.5 bg-surface-container-highest"></div>
+                                <!-- Paso 1 Completado -->
+                                <div class="relative flex items-start gap-4">
+                                    <div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center ring-4 ring-surface-container-lowest">
+                                        <span class="material-symbols-outlined text-label-sm">
+                                            check
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                                                Pedido Recibido y Pagado
+                                            </span>
+                                            <span class="font-caption text-caption bg-surface-container text-on-surface-variant px-2 py-0.5 rounded">
+                                                10:45 AM
+                                            </span>
+                                        </div>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                                            El pago fue autorizado por Visanet Guatemala y procesado con éxito.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Paso 2 En Proceso Activo -->
+                                <div class="relative flex items-start gap-4">
+                                    <div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-secondary ring-4 ring-secondary-container flex items-center justify-center">
+                                        <div class="w-2 h-2 rounded-full bg-on-secondary"></div>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="font-headline-sm text-headline-sm font-bold text-secondary">
+                                                Preparando en Bodega Central
+                                            </span>
+                                            <span class="font-caption text-caption bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-semibold">
+                                                En Proceso
+                                            </span>
+                                        </div>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                                            Ubicación: Bodega El Naranjo, Mixco. Validación de embalaje protector y números de serie.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Paso 3 Pendiente -->
+                                <div class="relative flex items-start gap-4">
+                                    <div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center ring-4 ring-surface-container-lowest">
+                                        <div class="w-2 h-2 rounded-full bg-on-surface-variant"></div>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">
+                                                En camino con mensajería Guatex / Forza
+                                            </span>
+                                        </div>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                                            Estimado: Mañana entre 9:00 AM y 1:00 PM con unidad express climatizada.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Paso 4 Pendiente -->
+                                <div class="relative flex items-start gap-4">
+                                    <div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center ring-4 ring-surface-container-lowest">
+                                        <div class="w-2 h-2 rounded-full bg-on-surface-variant"></div>
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">
+                                                Entregado en tu puerta
+                                            </span>
+                                        </div>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                                            Requerirá firma de recepción y presentación de DPI de Sofía Mendoza.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Botón Rastrear -->
+                            <div class="mt-6 pt-4 bg-surface-container-low p-4 rounded-lg flex flex-wrap items-center justify-between gap-3">
+                                <div class="flex items-center gap-2 text-on-surface">
+                                    <span class="material-symbols-outlined text-secondary">
+                                        pin_drop
+                                    </span>
+                                    <span class="font-label-md text-label-md font-medium">
+                                        Guía Guatex:
+                                        <strong>
+                                            GTX-901844-Z10
+                                        </strong>
+                                    </span>
+                                </div>
+                                <button class="bg-primary text-on-primary hover:bg-on-surface-variant px-4 py-2 rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+                                    <span class="material-symbols-outlined text-label-md">
+                                        open_in_new
+                                    </span>
+                                    Rastrear Envío en Vivo
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Datos de Entrega y Facturación (2 Cards en Grid) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Card Dirección y Entrega -->
+                            <div class="bg-surface-container-lowest rounded-xl shadow-sm p-6 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-3 text-secondary">
+                                        <span class="material-symbols-outlined text-headline-md">
+                                            home_pin
+                                        </span>
+                                        <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                                            Dirección de Entrega
+                                        </h3>
+                                    </div>
+                                    <p class="font-headline-sm text-body-md font-bold text-on-surface">
+                                        Sofía Mendoza
+                                    </p>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+                                        14 Calle 3-45 Zona 10
+                                        <br/>
+                                        Edificio Las Flores, Apto 702
+                                        <br/>
+                                        Ciudad de Guatemala, Guatemala
+                                    </p>
+                                    <div class="flex items-center gap-1.5 mt-3 text-on-surface-variant font-body-sm text-body-sm">
+                                        <span class="material-symbols-outlined text-label-md text-secondary">
+                                            call
+                                        </span>
+                                        <span>
+                                            +502 5521-8902
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pt-3 bg-surface-container-low p-3 rounded-lg flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-secondary text-label-md">
+                                        bolt
+                                    </span>
+                                    <span class="font-label-sm text-label-sm font-semibold text-on-surface">
+                                        Entrega Express Prioritaria (24h)
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Card Facturación SAT FEL -->
+                            <div class="bg-surface-container-lowest rounded-xl shadow-sm p-6 flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="flex items-center gap-2 text-secondary">
+                                            <span class="material-symbols-outlined text-headline-md">
+                                                description
+                                            </span>
+                                            <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                                                Factura FEL SAT
+                                            </h3>
+                                        </div>
+                                        <span class="bg-secondary-container text-on-secondary-container text-caption font-caption px-2 py-0.5 rounded font-bold">
+                                            Certificada
+                                        </span>
+                                    </div>
+                                    <div class="space-y-1 text-on-surface-variant font-body-sm text-body-sm">
+                                        <p>
+                                            <strong class="text-on-surface">
+                                                Nombre:
+                                            </strong>
+                                            Sofía Mendoza
+                                        </p>
+                                        <p>
+                                            <strong class="text-on-surface">
+                                                NIT:
+                                            </strong>
+                                            8492019-3
+                                        </p>
+                                        <p>
+                                            <strong class="text-on-surface">
+                                                Autorización SAT:
+                                            </strong>
+                                            29BF48A9-9821
+                                        </p>
+                                        <p>
+                                            <strong class="text-on-surface">
+                                                Serie FEL:
+                                            </strong>
+                                            E84D9102
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Botones Factura -->
+                                <div class="mt-4 pt-3 flex flex-col gap-2">
+                                    <div class="flex items-center gap-2">
+                                        <button class="flex-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors" type="button">
+                                            <span class="material-symbols-outlined text-label-md text-secondary">
+                                                picture_as_pdf
+                                            </span>
+                                            Descargar PDF
+                                        </button>
+                                        <button class="flex-1 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold py-2 px-3 rounded-lg flex items-center justify-center gap-1.5 transition-colors" type="button">
+                                            <span class="material-symbols-outlined text-label-md text-secondary">
+                                                code
+                                            </span>
+                                            Descargar XML
+                                        </button>
+                                    </div>
+                                    <button class="w-full bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold py-2 rounded-lg flex items-center justify-center gap-1.5 transition-colors" onclick="window.print()" type="button">
+                                        <span class="material-symbols-outlined text-label-md">
+                                            print
+                                        </span>
+                                        Imprimir Comprobante
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tarjeta de Soporte y Post-Venta Directo -->
+                        <div class="bg-primary-container text-on-primary rounded-xl p-6 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-headline-lg">
+                                        headset_mic
+                                    </span>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline-sm text-headline-sm font-bold text-on-primary">
+                                        ¿Tienes dudas sobre la entrega de tu pedido?
+                                    </h4>
+                                    <p class="font-body-sm text-body-sm text-on-primary-container mt-1">
+                                        Nuestro equipo de soporte oficial en Guatemala está activo para responder tus consultas en tiempo real.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="shrink-0 bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md font-semibold px-5 py-2.5 rounded-lg flex items-center gap-2 transition-colors shadow-sm" href="https://wa.me/50223004600" rel="noopener noreferrer" target="_blank">
+                                <span class="material-symbols-outlined text-label-md">
+                                    chat
+                                </span>
+                                WhatsApp (+502 2300-GO00)
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Columna Derecha (40% ~ 5/12 desktop) -->
+                    <div class="lg:col-span-5 flex flex-col gap-6">
+                        <!-- Resumen de Productos Comprados -->
+                        <div class="bg-surface-container-lowest rounded-xl shadow-sm p-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <h2 class="font-headline-md text-headline-md font-bold text-on-surface">
+                                    Resumen de Compra
+                                </h2>
+                                <span class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-semibold px-2.5 py-0.5 rounded-full">
+                                    3 Productos
+                                </span>
+                            </div>
+                            <!-- Lista de Productos -->
+                            <div class="flex flex-col gap-4">
+                                <!-- Producto 1 -->
+                                <div class="flex items-center gap-4 bg-surface-container-low p-3 rounded-lg">
+                                    <img class="w-16 h-16 rounded-lg object-cover shrink-0 bg-surface-container" data-alt="A clean front-facing modern Samsung 65-inch Crystal UHD 4K Smart television displayed on an aesthetic minimalist studio background with crisp cinematic lighting and deep black levels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPLjuoPsoVYHaAkYa49RyHEjPJFrzGDFookJcnPjidt3iDwM4JUaQRcax6Zi7mmyquUIESFEEuXQcFcVzJ4JRT-y9BBUJLEuJa0KHADx1fTU2USITBG-jec9xGd3nceZI9TVZHLUyFfnE8wr083XojcVcAbd3mEAEegXbzVQGaCGQ6CJO3vdbBoQaQQkJhntWmEYmV6ezhtCOqXqVy9kzF2ex2SShxiFIKjl6_gublW6PvNSeiZ8vQXQ"/>
+                                    <div class="flex-1 min-w-0">
+                                        <h3 class="font-headline-sm text-label-md font-bold text-on-surface truncate">
+                                            Smart TV Samsung 65" Crystal UHD 4K
+                                        </h3>
+                                        <p class="font-body-sm text-caption text-on-surface-variant">
+                                            Cant: 1 | Modelo: UN65CU7000G
+                                        </p>
+                                        <div class="flex items-center gap-1.5 mt-0.5">
+                                            <span class="material-symbols-outlined text-secondary text-caption">
+                                                verified
+                                            </span>
+                                            <span class="font-caption text-caption text-secondary font-semibold">
+                                                Garantía oficial 2 años
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="text-right shrink-0">
+                                        <span class="font-price-md text-price-md font-bold text-on-surface">
+                                            Q. 5,499.00
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- Producto 2 -->
+                                <div class="flex items-center gap-4 bg-surface-container-low p-3 rounded-lg">
+                                    <img class="w-16 h-16 rounded-lg object-cover shrink-0 bg-surface-container" data-alt="A sleek black Samsung 2.1 channel soundbar with a wireless wireless subwoofer on a modern studio background with cool studio ambient illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU29GysWYMWsGTlzr2q9EhZWjSQFSp8wnzkAS3Fnag039fyvWkP4-jhpUZSla9Dl07MIRDAUAgMOIC7csb1Nj321SQaHMAedkcbMMh95dI-15XbMxueFOEy0eIJ-iI5NoYGfx1UfwafCbKe8nGyxtmBEqzKsNOnKyEiYZ_ZAac859ZpkLQj78xj8e566dXvCj4LoYkil9qqbXGyi1MuPJq-RWn_SEHB5JnbV6jUrzU_qCqMYXcm1MIGQ"/>
+                                    <div class="flex-1 min-w-0">
+                                        <h3 class="font-headline-sm text-label-md font-bold text-on-surface truncate">
+                                            Barra de Sonido Samsung 2.1 Ch Bluetooth
+                                        </h3>
+                                        <p class="font-body-sm text-caption text-on-surface-variant">
+                                            Cant: 1 | Potencia: 300W Dolby Digital
+                                        </p>
+                                        <div class="flex items-center gap-1.5 mt-0.5">
+                                            <span class="material-symbols-outlined text-secondary text-caption">
+                                                verified
+                                            </span>
+                                            <span class="font-caption text-caption text-secondary font-semibold">
+                                                Garantía 1 año
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="text-right shrink-0">
+                                        <span class="font-price-md text-price-md font-bold text-on-surface">
+                                            Q. 990.00
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- Producto 3 -->
+                                <div class="flex items-center gap-4 bg-surface-container-low p-3 rounded-lg">
+                                    <img class="w-16 h-16 rounded-lg object-cover shrink-0 bg-surface-container" data-alt="Braided gold plated HDMI 2.1 ultra high speed cable coiled neatly on a professional tech workbench with subtle emerald reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjGwWMQeVJv7jEDkdrCex3lcl96H6HBFWm6QZYECn3_QhEzMe-eLDmxZ9_xWK5bOo61LJNqpeITpGk8hIQSy-EBJPo6rvAvSS8S7LIV-xYtyuejTuqtXmamKZcU2cecyaNMAO5VrZ9P0gXIbSpEJAzl2WidIyXk1MRX_qZjn1Wiu80M0LE7S918adUW1IKXfB1aA_9WYr5EeyT-ABVPRmH0o6g2Pwq1ANAwRJTcX16BvTyblk2KNuosw"/>
+                                    <div class="flex-1 min-w-0">
+                                        <h3 class="font-headline-sm text-label-md font-bold text-on-surface truncate">
+                                            Cable HDMI 2.1 Ultra High Speed 8K (2m)
+                                        </h3>
+                                        <p class="font-body-sm text-caption text-on-surface-variant">
+                                            Cant: 1 | Conectores chapados en oro
+                                        </p>
+                                        <div class="flex items-center gap-1.5 mt-0.5">
+                                            <span class="material-symbols-outlined text-secondary text-caption">
+                                                verified
+                                            </span>
+                                            <span class="font-caption text-caption text-secondary font-semibold">
+                                                Garantía de por vida
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="text-right shrink-0">
+                                        <span class="font-price-md text-price-md font-bold text-on-surface">
+                                            Q. 170.00
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Desglose Financiero -->
+                            <div class="mt-6 pt-4 flex flex-col gap-2.5">
+                                <div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+                                    <span>
+                                        Subtotal de productos
+                                    </span>
+                                    <span class="font-medium text-on-surface">
+                                        Q. 6,659.00
+                                    </span>
+                                </div>
+                                <div class="flex justify-between font-body-sm text-body-sm text-secondary">
+                                    <span class="flex items-center gap-1">
+                                        <span class="material-symbols-outlined text-label-md">
+                                            loyalty
+                                        </span>
+                                        Cupón de Bienvenida (BIENVENIDOGT)
+                                    </span>
+                                    <span class="font-bold">
+                                        - Q. 150.00
+                                    </span>
+                                </div>
+                                <div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+                                    <span>
+                                        Envío a Ciudad de Guatemala (Zona 10)
+                                    </span>
+                                    <span class="font-bold text-secondary uppercase text-caption tracking-wider">
+                                        GRATIS
+                                    </span>
+                                </div>
+                                <div class="flex justify-between font-body-sm text-body-sm text-on-surface-variant">
+                                    <span>
+                                        Impuestos (IVA 12% incluido)
+                                    </span>
+                                    <span>
+                                        Q. 697.39
+                                    </span>
+                                </div>
+                                <!-- Total Final -->
+                                <div class="mt-2 pt-3 bg-surface-container-low p-4 rounded-xl flex items-baseline justify-between">
+                                    <div>
+                                        <span class="font-headline-sm text-headline-sm font-bold text-on-surface block">
+                                            Total Pagado
+                                        </span>
+                                        <span class="font-caption text-caption text-secondary font-semibold">
+                                            12 Visacuotas de Q. 542.41 sin recargo
+                                        </span>
+                                    </div>
+                                    <span class="font-price-lg text-price-lg font-bold text-on-surface">
+                                        Q. 6,509.00
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Insignia de Protección al Comprador -->
+                            <div class="mt-4 flex items-center gap-3 text-on-surface-variant p-2">
+                                <span class="material-symbols-outlined text-secondary text-headline-md">
+                                    shield
+                                </span>
+                                <div class="font-caption text-caption">
+                                    <strong>
+                                        Garantía MercadoGo Protegida:
+                                    </strong>
+                                    Si el producto tiene cualquier defecto de fábrica, lo cambiamos en tu domicilio sin costo alguno durante 30 días.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navegación y Acciones Principales -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a class="flex-1 bg-primary text-on-primary hover:bg-on-surface-variant font-label-md text-label-md font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors text-center shadow-sm" data-path="orders" href="#">
+                                <span class="material-symbols-outlined text-label-md">
+                                    receipt
+                                </span>
+                                Ir a Mis Pedidos
+                            </a>
+                            <a class="flex-1 bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md font-semibold py-3 px-4 rounded-lg flex items-center justify-center gap-2 transition-colors text-center shadow-sm" data-path="home" href="#">
+                                <span class="material-symbols-outlined text-label-md">
+                                    storefront
+                                </span>
+                                Volver a la Tienda
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sección Inferior: Recomendados para tu nuevo Smart TV -->
+                <div class="mt-12 bg-surface-container-lowest rounded-2xl shadow-sm p-6 sm:p-8">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+                        <div>
+                            <div class="inline-flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold mb-1">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    recommend
+                                </span>
+                                <span>
+                                    Complementos Sugeridos
+                                </span>
+                            </div>
+                            <h3 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+                                Accesorios ideales para tu nuevo Samsung 65"
+                            </h3>
+                        </div>
+                        <span class="font-body-sm text-body-sm text-on-surface-variant">
+                            Aprovecha agregar a este pedido sin costo de envío adicional
+                        </span>
+                    </div>
+                    <!-- Grid de Recomendados -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Recomendado 1 -->
+                        <div class="bg-surface-container-low rounded-xl p-4 flex flex-col justify-between group hover:shadow-md transition-all">
+                            <div>
+                                <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface mb-3">
+                                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Heavy-duty black tilting articulating TV wall mount for large screen screens up to 75 inches photographed isolated on a clean neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAhbXkLuyNacZbm0M2S7P-fu3jPd28VlZrBK-rsT2Q1Gq8sprk9Z_K4KymwHs2byan3bhKDTxx7sHmpUneKbO16Xp3jodCMXjSav9ns72rUC5M1Vy0Y_2biNs9G0AdhNoIo438pSSteck64kYvPzYKkBKG3Ozp7WLwEVoixDgdOGi8EPXMbeoLJyxvYgCctWqGZtN7qzXukWDrbox2Gs8X5dllJpKLI0G2uITyIztaXj1opbO2n5kMlg"/>
+                                    <span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-sm text-caption px-2 py-0.5 rounded font-bold">
+                                        -25% OFF
+                                    </span>
+                                </div>
+                                <h4 class="font-headline-sm text-label-md font-bold text-on-surface line-clamp-2">
+                                    Soporte de Pared Articulado Reforzado para TV 40" a 75"
+                                </h4>
+                                <p class="font-body-sm text-caption text-on-surface-variant mt-1">
+                                    Incluye nivelador de burbuja y pernos para concreto
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 flex items-center justify-between">
+                                <div>
+                                    <div class="font-caption text-caption line-through text-outline">
+                                        Q. 399.00
+                                    </div>
+                                    <div class="font-price-md text-price-md font-bold text-on-surface">
+                                        Q. 299.00
+                                    </div>
+                                </div>
+                                <button class="bg-secondary text-on-secondary hover:bg-on-secondary-container p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" title="Agregar a la orden" type="button">
+                                    <span class="material-symbols-outlined text-label-md">
+                                        add_shopping_cart
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Recomendado 2 -->
+                        <div class="bg-surface-container-low rounded-xl p-4 flex flex-col justify-between group hover:shadow-md transition-all">
+                            <div>
+                                <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface mb-3">
+                                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High quality surge protector power strip with 6 outlets and smart USB charging ports on sleek modern white desktop setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKJpsTvbZkoFiz9jJQhpiCZVg8dcF00ZrXzTAG36xvcgyhP2-xPcBP2Omav5dZ7nETTICY54xnn2BnjgMmnhmD1ZwFniCPJRgcmu8Awlo94vdgopUGXv0vsDHb8-BFlQzxSv-uP5piuiU3FIT-XQ53O7i1uie904ErCwyc7QmRDSUal85nIzzA9R1CsMC62BOTvwuoq7P7hV_NOwejXep6IBLGvkMB07rs085UZZSVGQeeVWJbYEtxMA"/>
+                                    <span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-sm text-caption px-2 py-0.5 rounded font-bold">
+                                        Esencial
+                                    </span>
+                                </div>
+                                <h4 class="font-headline-sm text-label-md font-bold text-on-surface line-clamp-2">
+                                    Regulador de Voltaje y Protector de Picos Forza 1200VA
+                                </h4>
+                                <p class="font-body-sm text-caption text-on-surface-variant mt-1">
+                                    Protege tu televisor de fluctuaciones eléctricas en Guatemala
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 flex items-center justify-between">
+                                <div>
+                                    <div class="font-caption text-caption line-through text-outline">
+                                        Q. 280.00
+                                    </div>
+                                    <div class="font-price-md text-price-md font-bold text-on-surface">
+                                        Q. 225.00
+                                    </div>
+                                </div>
+                                <button class="bg-secondary text-on-secondary hover:bg-on-secondary-container p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" title="Agregar a la orden" type="button">
+                                    <span class="material-symbols-outlined text-label-md">
+                                        add_shopping_cart
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Recomendado 3 -->
+                        <div class="bg-surface-container-low rounded-xl p-4 flex flex-col justify-between group hover:shadow-md transition-all">
+                            <div>
+                                <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface mb-3">
+                                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant RGB smart LED light strip backlight behind a TV screen with subtle color glow on wall on an elegant living room background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeIDCjF775sMT4FZdg5FJMGaTY8PW3fOQodW6rs_QiFXYFc-H9213N3JZiRTQ14yOjA0HQ1kpUYQSuy9hoPF2yp2nDM7lmdcY4_139TCVF2xMDMtYRT7n-6o8ZkdkVX1EPSBt3bL1EizIm4ituTy_M5CU_Ym0jOtS0ScsFby3oK3YU0ZbQ5geDhLaVnGyTCC04Dj87yWPciaVsbZgq7nzCZqQ8ynXbFav_qt-EkiWXEuC8XVC-4fygag"/>
+                                    <span class="absolute top-2 left-2 bg-secondary-container text-on-secondary-container font-label-sm text-caption px-2 py-0.5 rounded font-bold">
+                                        Populares
+                                    </span>
+                                </div>
+                                <h4 class="font-headline-sm text-label-md font-bold text-on-surface line-clamp-2">
+                                    Tira de Luces LED RGB Smart para Detrás de TV 65" con App
+                                </h4>
+                                <p class="font-body-sm text-caption text-on-surface-variant mt-1">
+                                    Sincronización de color y modo cine inmersivo
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 flex items-center justify-between">
+                                <div>
+                                    <div class="font-caption text-caption line-through text-outline">
+                                        Q. 210.00
+                                    </div>
+                                    <div class="font-price-md text-price-md font-bold text-on-surface">
+                                        Q. 165.00
+                                    </div>
+                                </div>
+                                <button class="bg-secondary text-on-secondary hover:bg-on-secondary-container p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" title="Agregar a la orden" type="button">
+                                    <span class="material-symbols-outlined text-label-md">
+                                        add_shopping_cart
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Recomendado 4 -->
+                        <div class="bg-surface-container-low rounded-xl p-4 flex flex-col justify-between group hover:shadow-md transition-all">
+                            <div>
+                                <div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface mb-3">
+                                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="High-end microfiber screen cleaning spray kit with soft cloth for OLED and 4K LED TVs on clean surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAisxg_xUre2s4BcPS6pAziWPAgtp9EFwPLN6QC3CJMIhoo6eHNSSX2HT7Cog1UXW62SXE1eAY8wa-LUMrN0t7iqbpvuQ-UFkDzYnO6t5_BMwjqQtqro5idnUA2mzGnO-kNlQxdGpjsEvPahYdFGANu0mYD_npmZNMRk9GvTq-WjxvByLvW2yqxlYwXnlRsjIF5YljCYXXxjCP2Q32GdzDVB0K_WIN0N79XGNlHNWjwDmYYKHTcTOn7ug"/>
+                                    <span class="absolute top-2 left-2 bg-surface-container text-on-surface font-label-sm text-caption px-2 py-0.5 rounded font-bold">
+                                        Cuidado
+                                    </span>
+                                </div>
+                                <h4 class="font-headline-sm text-label-md font-bold text-on-surface line-clamp-2">
+                                    Kit Profesional de Limpieza Antiestático para Pantallas 4K
+                                </h4>
+                                <p class="font-body-sm text-caption text-on-surface-variant mt-1">
+                                    200ml spray especial anti-rayas + 2 paños de microfibra
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-3 flex items-center justify-between">
+                                <div>
+                                    <div class="font-caption text-caption line-through text-outline">
+                                        Q. 115.00
+                                    </div>
+                                    <div class="font-price-md text-price-md font-bold text-on-surface">
+                                        Q. 85.00
+                                    </div>
+                                </div>
+                                <button class="bg-secondary text-on-secondary hover:bg-on-secondary-container p-2.5 rounded-lg flex items-center justify-center transition-colors shadow-sm" title="Agregar a la orden" type="button">
+                                    <span class="material-symbols-outlined text-label-md">
+                                        add_shopping_cart
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Micro-interacción: simular copiado de número de guía al hacer click en el badge
+                document.addEventListener('DOMContentLoaded', () => {
+                  const guideElement = document.querySelector('strong');
+                  if (guideElement && guideElement.textContent.includes('GTX-')) {
+                    guideElement.style.cursor = 'pointer';
+                    guideElement.title = 'Haz clic para copiar el número de guía';
+                    guideElement.addEventListener('click', () => {
+                      navigator.clipboard?.writeText('GTX-901844-Z10');
+                      const originalText = guideElement.textContent;
+                      guideElement.textContent = '¡Copiado!';
+                      setTimeout(() => {
+                        guideElement.textContent = originalText;
+                      }, 1500);
+                    });
+                  }
+                });
+            </script>
+        </main>
+        <footer class="w-full bg-surface-container-lowest mt-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+            <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+                <div class="flex flex-col gap-space-sm">
+                    <div class="flex items-center gap-space-xs mb-1">
+                        <span class="font-headline-md text-headline-md text-primary font-bold">
+                            MercadoGo
+                        </span>
+                        <span class="bg-secondary text-on-secondary text-caption font-caption px-1.5 py-0.5 rounded font-bold">
+                            GT
+                        </span>
+                    </div>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        La tienda departamental en línea líder en Guatemala, con entrega rápida, garantía certificada y facilidades de pago en Visacuotas.
+                    </p>
+                    <div class="flex flex-col gap-1.5 mt-2 text-label-sm font-label-sm text-on-surface-variant">
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Tiendas Físicas en Guatemala
+                        </a>
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Sostenibilidad y Comunidad
+                        </a>
+                        <a class="hover:text-secondary transition-colors" href="#">
+                            Bolsa de Empleo
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Servicio al Cliente
+                    </h3>
+                    <ul class="flex flex-col gap-2 text-label-sm font-label-sm text-on-surface-variant">
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    local_shipping
+                                </span>
+                                Rastreo de Pedidos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    sync
+                                </span>
+                                Políticas de Devolución (30 días)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    verified
+                                </span>
+                                Garantía Oficial de Fabrica
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary transition-colors flex items-center gap-1.5" href="#">
+                                <span class="material-symbols-outlined text-label-sm">
+                                    help
+                                </span>
+                                Preguntas Frecuentes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Métodos de Pago Seguros
+                    </h3>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        Transacciones 100% cifradas y protegidas con certificado de seguridad SSL.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2 text-caption font-caption text-on-surface">
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                credit_card
+                            </span>
+                            <span>
+                                Visacuotas Hasta 18x
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                payments
+                            </span>
+                            <span>
+                                Pago Contra Entrega
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                point_of_sale
+                            </span>
+                            <span>
+                                POS Móvil a Domicilio
+                            </span>
+                        </div>
+                        <div class="bg-surface-container-low p-2 rounded flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-secondary text-label-md">
+                                shield_with_heart
+                            </span>
+                            <span>
+                                Visa / Mastercard
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-space-sm">
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                        Suscríbete y Ahorra
+                    </h3>
+                    <p class="text-body-sm font-body-sm text-on-surface-variant">
+                        Obtén un cupón de
+                        <strong>
+                            Q.50 de descuento
+                        </strong>
+                        en tu primera orden al registrarte a nuestro boletín semanal.
+                    </p>
+                    <form class="flex flex-col gap-2" onsubmit="event.preventDefault();">
+                        <div class="relative w-full">
+                            <input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:bg-surface-container-lowest" placeholder="tucorreo@ejemplo.gt" type="email"/>
+                        </div>
+                        <button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-4 py-2 rounded-lg font-label-md text-label-md font-semibold transition-colors" type="submit">
+                            Quiero mi Cupón
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="bg-surface-container-low py-4">
+                <div class="max-w-[1320px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop text-center text-on-surface-variant text-label-sm font-label-sm">
+                    © 2025 MercadoGo Guatemala S.A. Todos los derechos reservados. Precios expresados en Quetzales (GTQ) incluyen IVA.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
